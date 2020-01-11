@@ -1,15 +1,16 @@
 module.exports = {
     rules: [],
     parser: {
-        fileEnding: [] || "",
-        parserCL: {}
+        fileEnding: "json",
+        parser: require('./lib/parser')
     },
     generator: {
         fileEnding: [] || "",
-        generatorCL: {}
+        generator: require('./lib/generator')
     },
-    dependencies: [{
+    dependencies: []
+    /* {
         pluginName: "",
         version: ""
-    }]
+    } */
 }

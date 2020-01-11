@@ -4,5 +4,9 @@
     "description": "a test plugin to provide a way to create a suitable plugin system",
     "main": "index.js",
     "author": "Adrian Marten",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "escodegen": "^1.12.1",
+        "espree": "^6.1.2"
+    }
 }
