@@ -3,7 +3,7 @@ const {
     Node
 } = require('featureJS/lib/utils/acorn-utils');
 
-test('Check parser parses empty JSON Array -> AST match', () => {
+test('Check generator generates JSON Array from AST', () => {
     const testNode = new Node();
     testNode.type = "ArrayExpression";
     testNode.start = 8;
@@ -16,7 +16,7 @@ test('Check parser parses empty JSON Array -> AST match', () => {
     expect(generator.generate(testNode)).toEqual('[]');
 });
 
-test('Check parser parses empty JSON Object -> AST match', () => {
+test('Check generator generates JSON Array from AST', () => {
     const testNode = new Node();
     testNode.type = "ObjectExpression";
     testNode.start = 8;
@@ -27,4 +27,11 @@ test('Check parser parses empty JSON Object -> AST match', () => {
     testNode.name = "root";
 
     expect(generator.generate(testNode)).toEqual('{}');
+});
+
+test('Check generator handles empty AST node', () => {
+    const testNode = new Node();
+    expect(() => generator.generate(testNode).toThrowError(
+        new Error('Unknown node type')
+    ));
 });
