@@ -5,8 +5,20 @@
     "main": "index.js",
     "author": "Adrian Marten",
     "license": "MIT",
+    "scripts": {
+        "test": "jest"
+    },
     "dependencies": {
         "escodegen": "^1.12.1",
         "espree": "^6.1.2"
+    },
+    "devDependencies": {
+        "featureJS": "git+https://github.com/tabris87/featureJS.git#master",
+        "jest": "^25.1.0"
+    },
+    "jest": {
+        "roots": [
+            "test"
+        ]
     }
 }
