@@ -6,19 +6,35 @@
     "author": "Adrian Marten",
     "license": "MIT",
     "scripts": {
-        "test": "jest"
+        "test": "jest --runInBand"
     },
     "dependencies": {
         "escodegen": "^1.12.1",
         "espree": "^6.1.2"
     },
     "devDependencies": {
-        "featureJS": "git+https://github.com/tabris87/featureJS.git#master",
-        "jest": "^25.1.0"
+        "featureJS": "git+https://github.com/tabris87/featureJS.git",
+        "jest": "^25.1.0",
+        "jest-html-reporters": "^1.2.1"
     },
     "jest": {
+        "testEnvironment": "node",
         "roots": [
             "test"
+        ],
+        "collectCoverage": true,
+        "coverageReporters": [
+            "text",
+            "html"
+        ],
+        "reporters": [
+            "default",
+            ["jest-html-reporters", {
+                "filename": "./test/latestTests.html",
+                "expand": false,
+                "pageTitle": "featureJS-plugin-JSON",
+                "hideIcon": true
+            }]
         ]
     }
 }

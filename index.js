@@ -1,5 +1,5 @@
 module.exports = {
-    /* rules: [], */
+    rules: require('./lib/rules'),
     parser: {
         fileEnding: "json",
         parser: require('./lib/parser')
