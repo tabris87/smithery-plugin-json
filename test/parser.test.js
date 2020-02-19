@@ -1,7 +1,5 @@
 const parser = require('../lib/parser');
-const {
-    Node
-} = require('featureJS/lib/utils/acorn-utils');
+const Node = require('featurecli-commons').types.Node;
 
 test('Check parser parses empty JSON object', () => {
     expect(parser.parse('{}')).toBeDefined();

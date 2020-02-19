@@ -1,7 +1,7 @@
 const generator = require('../lib/generator');
 const {
     Node
-} = require('featureJS/lib/utils/acorn-utils');
+} = require('featureCLI-commons').types;
 
 test('Check generator generates JSON Array from AST', () => {
     const testNode = new Node();
