@@ -1,6 +1,6 @@
-# featureJS-plugin-JSON
+# featureCLI-plugin-JSON
 
-## Installation featureJS-plugin for testing
+## Installation featureCLI-plugin for testing
 ```npm install -g git+https://github.com/tabris87/featureJS-plugin-JSON.git#master```
 
 ## Debugging tests
