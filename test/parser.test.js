@@ -1,5 +1,5 @@
 const parser = require('../lib/parser');
-const Node = require('featurecli-commons').types.Node;
+const Node = require('smithery-equipment').types.Node;
 
 test('Check parser parses empty JSON object', () => {
     expect(parser.parse('{}')).toBeDefined();
