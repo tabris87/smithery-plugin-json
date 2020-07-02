@@ -1,7 +1,7 @@
 const generator = require('../lib/generator');
 const {
     Node
-} = require('featureCLI-commons').types;
+} = require('smithery-equipment').types;
 
 test('Check generator generates JSON Array from AST', () => {
     const testNode = new Node();

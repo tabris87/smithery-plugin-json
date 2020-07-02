@@ -2,10 +2,10 @@ const generator = require('../lib/generator');
 const parser = require('../lib/parser');
 const aRules = require('../lib/rules');
 //setup the heavy dependency chain
-const ImposerCL = require('featureJS/lib/Imposer');
-const ParserCL = require('featureJS/lib/Parser');
-const GeneratorCL = require('featureJS/lib/Generator');
-const RuleSetCL = require('featureJS/lib/RuleSet');
+const ImposerCL = require('smithery/lib/Imposer');
+const ParserCL = require('smithery/lib/Parser');
+const GeneratorCL = require('smithery/lib/Generator');
+const RuleSetCL = require('smithery/lib/RuleSet');
 
 const oImposer = new ImposerCL({
     parser: new ParserCL(),
