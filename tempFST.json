@@ -1,0 +1,88 @@
+{
+    "target": {
+        "1st Level": {
+            "type": "Object",
+            "name": "root",
+            "childs": [
+                {
+                    "type": "Property",
+                    "name": "array",
+                    "content": "[\"1\", [\"2\"]]",
+                    "mergeStrat": "propertyCompose",
+                    "metadata": {
+                        "code_lang": "json"
+                    }
+                }
+            ]
+        },
+        "2nd Level (propertyCompose)": {
+            "type": "Array",
+            "name": "root",
+            "childs": [
+                {
+                    "type": "ArrayElement",
+                    "name": "0",
+                    "content": "1"
+                },
+                {
+                    "type": "ArrayElement",
+                    "name": "1",
+                    "content": "[\"2\"]"
+                }
+            ],
+            "metadata": {
+                "code_lang": "json",
+                "originNodeProperties": {
+                    "path": "ObjectExpression.Property.ArrayExpression",
+                    "name": "array"
+                }
+            }
+        }
+    },
+    "source": {
+        "type": "ObjectExpression",
+        "properties": [
+            {
+                "type": "Property",
+                "key": {
+                    "type": "Literal",
+                    "value": "array",
+                    "raw": "array"
+                },
+                "value": {
+                    "type": "ArrayExpression",
+                    "elements": [
+                        {
+                            "type": "Literal",
+                            "value": "1",
+                            "raw": "1",
+                            "path": "ObjectExpression.Property.ArrayExpression.Literal",
+                            "name": "1"
+                        },
+                        {
+                            "type": "ArrayExpression",
+                            "elements": [
+                                {
+                                    "type": "Literal",
+                                    "value": "2",
+                                    "raw": "2",
+                                    "path": "ObjectExpression.Property.ArrayExpression.ArrayExpression.Literal",
+                                    "name": "2"
+                                }
+                            ],
+                            "path": "ObjectExpression.Property.ArrayExpression.ArrayExpression",
+                            "name": "array[1]"
+                        }
+                    ],
+                    "path": "ObjectExpression.Property.ArrayExpression",
+                    "name": "array"
+                },
+                "kind": "init",
+                "path": "ObjectExpression.Property",
+                "name": "array"
+            }
+        ],
+        "path": "ObjectExpression",
+        "name": "root"
+    }
+}

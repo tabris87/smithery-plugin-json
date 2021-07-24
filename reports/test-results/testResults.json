@@ -1,0 +1,391 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 12,
+    "passes": 7,
+    "pending": 0,
+    "failures": 5,
+    "start": "2021-07-22T18:50:55.716Z",
+    "end": "2021-07-22T18:50:55.774Z",
+    "duration": 58,
+    "testsRegistered": 12,
+    "passPercent": 58.333333333333336,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e38e1dce-9e4d-414b-979d-33fd598eeaeb",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c82c9a69-3849-4962-8a8f-8aec3f4a807e",
+          "title": "Check different imposings from an object root element",
+          "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\test\\imposeObjectRoot.spec.js",
+          "file": "\\test\\imposeObjectRoot.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "a9f4b782-fd2d-4d4c-9dfb-427ca4167885",
+              "title": "First level property imposing",
+              "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\test\\imposeObjectRoot.spec.js",
+              "file": "\\test\\imposeObjectRoot.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Test simple property addition",
+                  "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property addition",
+                  "timedOut": false,
+                  "duration": 23,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"simple\":\"base\"}';\nconst sFeatureJSON = '{\"additional\":\"feature\"}';\nconst sResultJSON = formatResult('{\"simple\":\"base\",\"additional\":\"feature\"}');\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {},
+                  "uuid": "1cd50f00-1dcf-4a76-ba6a-c971e385fe96",
+                  "parentUUID": "a9f4b782-fd2d-4d4c-9dfb-427ca4167885",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test simple property replace \"base\" -> \"feature\"",
+                  "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property replace \"base\" -> \"feature\"",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"simple\":\"base\"}';\nconst sFeatureJSON = '{\"simple\":\"feature\"}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {},
+                  "uuid": "699189c4-12ea-4b3d-94ef-4d407dde3ff7",
+                  "parentUUID": "a9f4b782-fd2d-4d4c-9dfb-427ca4167885",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test simple property replace 1 -> 2",
+                  "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property replace 1 -> 2",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"number\":1}';\nconst sFeatureJSON = '{\"number\":2}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {},
+                  "uuid": "d05e21c6-109f-4f76-8e74-7a55b88f4195",
+                  "parentUUID": "a9f4b782-fd2d-4d4c-9dfb-427ca4167885",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test simple property replace 1 -> {}",
+                  "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property replace 1 -> {}",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"number\":1}';\nconst sFeatureJSON = '{\"number\":{}}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {},
+                  "uuid": "4c2f604c-9115-4b8d-96c5-af195a8253fd",
+                  "parentUUID": "a9f4b782-fd2d-4d4c-9dfb-427ca4167885",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test simple property replace 1 -> []",
+                  "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property replace 1 -> []",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"number\":1}';\nconst sFeatureJSON = '{\"number\":[]}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {},
+                  "uuid": "4aa8db0a-620f-445d-b058-2e001e6bc43f",
+                  "parentUUID": "a9f4b782-fd2d-4d4c-9dfb-427ca4167885",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "1cd50f00-1dcf-4a76-ba6a-c971e385fe96",
+                "699189c4-12ea-4b3d-94ef-4d407dde3ff7",
+                "d05e21c6-109f-4f76-8e74-7a55b88f4195",
+                "4c2f604c-9115-4b8d-96c5-af195a8253fd",
+                "4aa8db0a-620f-445d-b058-2e001e6bc43f"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 29,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "695c885b-dca4-4b36-b20c-b8cfa821486c",
+              "title": "Property replacement",
+              "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\test\\imposeObjectRoot.spec.js",
+              "file": "\\test\\imposeObjectRoot.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Test object property replace {} -> 1",
+                  "fullTitle": "Check different imposings from an object root element Property replacement Test object property replace {} -> 1",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"object\":{\"test\":1}}';\nconst sFeatureJSON = '{\"object\":1}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {},
+                  "uuid": "fcbb8fd6-23a2-451c-b7cf-c5ef417d7c58",
+                  "parentUUID": "695c885b-dca4-4b36-b20c-b8cfa821486c",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test array property replace [] -> 1",
+                  "fullTitle": "Check different imposings from an object root element Property replacement Test array property replace [] -> 1",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"array\":[\"1\"]}';\nconst sFeatureJSON = '{\"array\":1}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {},
+                  "uuid": "b2cd3eff-b22c-4518-9b82-0b3470995a57",
+                  "parentUUID": "695c885b-dca4-4b36-b20c-b8cfa821486c",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "fcbb8fd6-23a2-451c-b7cf-c5ef417d7c58",
+                "b2cd3eff-b22c-4518-9b82-0b3470995a57"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "648a30db-4679-4c42-83db-30c972aa96b1",
+              "title": "Property merge",
+              "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\test\\imposeObjectRoot.spec.js",
+              "file": "\\test\\imposeObjectRoot.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Test array property merge [\"1\", \"2\"] + [\"3\"] => [\"1\", \"2\", \"3\"]",
+                  "fullTitle": "Check different imposings from an object root element Property merge Test array property merge [\"1\", \"2\"] + [\"3\"] => [\"1\", \"2\", \"3\"]",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"array\":[\"1\", \"2\"]}';\nconst sFeatureJSON = '{\"array\":[\"3\"]}';\nconst sResultJSON = formatResult('{\"array\": [\"1\",\"2\",\"3\"]}');\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {
+                    "message": "TypeError: Cannot read property 'type' of undefined",
+                    "estack": "TypeError: Cannot read property 'type' of undefined\n    at CodeGenerator.generateExpression (node_modules\\escodegen\\escodegen.js:2469:21)\n    at CodeGenerator.Property (node_modules\\escodegen\\escodegen.js:2159:22)\n    at CodeGenerator.generateExpression (node_modules\\escodegen\\escodegen.js:2475:28)\n    at C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\node_modules\\escodegen\\escodegen.js:2172:33\n    at withIndent (node_modules\\escodegen\\escodegen.js:576:9)\n    at CodeGenerator.ObjectExpression (node_modules\\escodegen\\escodegen.js:2171:13)\n    at CodeGenerator.generateExpression (node_modules\\escodegen\\escodegen.js:2475:28)\n    at generateInternal (node_modules\\escodegen\\escodegen.js:2513:28)\n    at Module.generate (node_modules\\escodegen\\escodegen.js:2577:18)\n    at generate (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/generator.js:5:22)\n    at Generator.generate (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/generator.js:7:16)\n    at imposing (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/test/imposeObjectRoot.spec.js:29:16)\n    at Context.<anonymous> (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/test/imposeObjectRoot.spec.js:101:20)\n    at processImmediate (internal/timers.js:461:21)",
+                    "diff": null
+                  },
+                  "uuid": "d8ab1985-e42b-4a0f-8b96-63ff3ec320cb",
+                  "parentUUID": "648a30db-4679-4c42-83db-30c972aa96b1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test array property merge [\"1\"] + [{\"number\": 2}] => [\"1\", {\"number\": 2}]",
+                  "fullTitle": "Check different imposings from an object root element Property merge Test array property merge [\"1\"] + [{\"number\": 2}] => [\"1\", {\"number\": 2}]",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"array\":[\"1\"]}';\nconst sFeatureJSON = '{\"array\":[{\"number\": 2}]}';\nconst sResultJSON = formatResult('{\"array\": [\"1\", {\"number\": 2}]}');\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {
+                    "message": "TypeError: Cannot read property 'length' of undefined",
+                    "estack": "TypeError: Cannot read property 'length' of undefined\n    at ObjectExpression.toFST (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/strategies/ObjectExpression.js:19:34)\n    at astToFst (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/transformer.js:5:22)\n    at file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/strategies/ArrayExpression.js:45:31\n    at Array.map (<anonymous>)\n    at ArrayExpression.toAST (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/strategies/ArrayExpression.js:44:47)\n    at fstToAst (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/transformer.js:10:22)\n    at Generator.generate (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/generator.js:6:21)\n    at Rule.apply (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/rules/propertyCompose.js:23:39)\n    at Rule.apply (node_modules\\smithery\\lib\\Rule.js:11:21)\n    at Imposer.composeTrees (node_modules\\smithery\\lib\\Imposer.js:86:36)\n    at Imposer.composeTrees (node_modules\\smithery\\lib\\Imposer.js:64:55)\n    at Imposer.impose (node_modules\\smithery\\lib\\Imposer.js:20:33)\n    at imposing (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/test/imposeObjectRoot.spec.js:27:32)\n    at Context.<anonymous> (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/test/imposeObjectRoot.spec.js:109:20)\n    at processImmediate (internal/timers.js:461:21)",
+                    "diff": null
+                  },
+                  "uuid": "f4b15b3f-2ded-4282-b8de-52938f22ce73",
+                  "parentUUID": "648a30db-4679-4c42-83db-30c972aa96b1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test array property merge [\"1\"] + [[\"2\"]] => [\"1\", [\"2\"]]",
+                  "fullTitle": "Check different imposings from an object root element Property merge Test array property merge [\"1\"] + [[\"2\"]] => [\"1\", [\"2\"]]",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"array\":[\"1\"]}';\nconst sFeatureJSON = '{\"array\":[[\"2\"]]}';\nconst sResultJSON = formatResult('{\"array\": [\"1\", [\"2\"]]}');\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {
+                    "message": "TypeError: Cannot read property 'map' of undefined",
+                    "estack": "TypeError: Cannot read property 'map' of undefined\n    at ArrayExpression.toFST (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/strategies/ArrayExpression.js:21:42)\n    at astToFst (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/transformer.js:5:22)\n    at file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/strategies/ArrayExpression.js:45:31\n    at Array.map (<anonymous>)\n    at ArrayExpression.toAST (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/strategies/ArrayExpression.js:44:47)\n    at fstToAst (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/transformer.js:10:22)\n    at Generator.generate (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/generator.js:6:21)\n    at Rule.apply (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/rules/propertyCompose.js:23:39)\n    at Rule.apply (node_modules\\smithery\\lib\\Rule.js:11:21)\n    at Imposer.composeTrees (node_modules\\smithery\\lib\\Imposer.js:86:36)\n    at Imposer.composeTrees (node_modules\\smithery\\lib\\Imposer.js:64:55)\n    at Imposer.impose (node_modules\\smithery\\lib\\Imposer.js:20:33)\n    at imposing (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/test/imposeObjectRoot.spec.js:27:32)\n    at Context.<anonymous> (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/test/imposeObjectRoot.spec.js:117:20)\n    at processImmediate (internal/timers.js:461:21)",
+                    "diff": null
+                  },
+                  "uuid": "971187bb-7ab7-494c-a86c-eddf1aeb609f",
+                  "parentUUID": "648a30db-4679-4c42-83db-30c972aa96b1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test array property merge [[\"1\"], [\"2\"]] + [[\"3\"]] => [[\"1\"], [\"2\"], [\"3\"]]",
+                  "fullTitle": "Check different imposings from an object root element Property merge Test array property merge [[\"1\"], [\"2\"]] + [[\"3\"]] => [[\"1\"], [\"2\"], [\"3\"]]",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"array\":[[\"1\"], [\"2\"]]}';\nconst sFeatureJSON = '{\"array\":[[\"3\"]]}';\nconst sResultJSON = formatResult('{\"array\": [[\"1\"], [\"2\"], [\"3\"]]}');\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {
+                    "message": "TypeError: Cannot read property 'map' of undefined",
+                    "estack": "TypeError: Cannot read property 'map' of undefined\n    at ArrayExpression.toFST (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/strategies/ArrayExpression.js:21:42)\n    at astToFst (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/transformer.js:5:22)\n    at file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/strategies/ArrayExpression.js:45:31\n    at Array.map (<anonymous>)\n    at ArrayExpression.toAST (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/strategies/ArrayExpression.js:44:47)\n    at fstToAst (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/transformer.js:10:22)\n    at Generator.generate (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/generator.js:6:21)\n    at Rule.apply (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/rules/propertyCompose.js:23:39)\n    at Rule.apply (node_modules\\smithery\\lib\\Rule.js:11:21)\n    at Imposer.composeTrees (node_modules\\smithery\\lib\\Imposer.js:86:36)\n    at Imposer.composeTrees (node_modules\\smithery\\lib\\Imposer.js:64:55)\n    at Imposer.impose (node_modules\\smithery\\lib\\Imposer.js:20:33)\n    at imposing (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/test/imposeObjectRoot.spec.js:27:32)\n    at Context.<anonymous> (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/test/imposeObjectRoot.spec.js:124:20)\n    at processImmediate (internal/timers.js:461:21)",
+                    "diff": null
+                  },
+                  "uuid": "114076a3-685d-4df0-ba60-4cd8256656eb",
+                  "parentUUID": "648a30db-4679-4c42-83db-30c972aa96b1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test array property merge [{\"prop\":\"1\"}, {\"prop\":\"2\"}] + [{\"prop\":\"3\"}] => [{\"prop\":\"1\"}, {\"prop\":\"2\"}, {\"prop\":\"3\"}]",
+                  "fullTitle": "Check different imposings from an object root element Property merge Test array property merge [{\"prop\":\"1\"}, {\"prop\":\"2\"}] + [{\"prop\":\"3\"}] => [{\"prop\":\"1\"}, {\"prop\":\"2\"}, {\"prop\":\"3\"}]",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"array\":[{\"prop\":\"1\"}, {\"prop\":\"2\"}]}';\nconst sFeatureJSON = '{\"array\":[{\"prop\":\"3\"}]}';\nconst sResultJSON = formatResult('{\"array\": [{\"prop\":\"1\"}, {\"prop\":\"2\"}, {\"prop\":\"3\"}]}');\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {
+                    "message": "TypeError: Cannot read property 'length' of undefined",
+                    "estack": "TypeError: Cannot read property 'length' of undefined\n    at ObjectExpression.toFST (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/strategies/ObjectExpression.js:19:34)\n    at astToFst (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/transformer.js:5:22)\n    at file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/strategies/ArrayExpression.js:45:31\n    at Array.map (<anonymous>)\n    at ArrayExpression.toAST (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/strategies/ArrayExpression.js:44:47)\n    at fstToAst (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/astTools/transformer.js:10:22)\n    at Generator.generate (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/generator.js:6:21)\n    at Rule.apply (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/lib/rules/propertyCompose.js:23:39)\n    at Rule.apply (node_modules\\smithery\\lib\\Rule.js:11:21)\n    at Imposer.composeTrees (node_modules\\smithery\\lib\\Imposer.js:86:36)\n    at Imposer.composeTrees (node_modules\\smithery\\lib\\Imposer.js:64:55)\n    at Imposer.impose (node_modules\\smithery\\lib\\Imposer.js:20:33)\n    at imposing (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/test/imposeObjectRoot.spec.js:27:32)\n    at Context.<anonymous> (file:///C:/Users/martena/Entwicklung/smithery/smithery-plugin-json/test/imposeObjectRoot.spec.js:132:20)\n    at processImmediate (internal/timers.js:461:21)",
+                    "diff": null
+                  },
+                  "uuid": "4e765bf1-554f-4873-8475-ee0296549a42",
+                  "parentUUID": "648a30db-4679-4c42-83db-30c972aa96b1",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "d8ab1985-e42b-4a0f-8b96-63ff3ec320cb",
+                "f4b15b3f-2ded-4282-b8de-52938f22ce73",
+                "971187bb-7ab7-494c-a86c-eddf1aeb609f",
+                "114076a3-685d-4df0-ba60-4cd8256656eb",
+                "4e765bf1-554f-4873-8475-ee0296549a42"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 10,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.0.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "testResults",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/test-results",
+        "reportFilename": "testResults"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

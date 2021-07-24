@@ -8,18 +8,27 @@
     },
     "license": "Apache-2.0",
     "description": "A plugin for smithery to support feature oriented programming with JSON",
+    "type": "module",
     "scripts": {
-        "test": "jest --runInBand"
+        "test": "mocha \"test/*.spec.js\" --diff --reporter spec --reporter mochawesome --reporter-options reportDir=reports/test-results,reportFilename=testResults",
+        "test-single": "mocha --diff --reporter spec ",
+        "test-debug": "mocha --inspect-brk \"test/*.spec.js\"",
+        "test-debug-single": "mocha --inspect-brk"
     },
     "main": "index.js",
     "dependencies": {
         "escodegen": "^1.12.1",
-        "espree": "^6.1.2"
+        "espree": "^6.1.2",
+        "estraverse": "^5.2.0",
+        "estree-walker": "^2.0.2"
     },
     "devDependencies": {
+        "chai": "^4.3.4",
         "jest": "^25.1.0",
         "jest-html-reporters": "^1.2.1",
-        "smithery": "^0.2.0",
+        "mocha": "^9.0.2",
+        "mochawesome": "^6.2.2",
+        "smithery": "file:../smithery/smithery-core/smithery-0.6.2.tgz",
         "smithery-equipment": "^0.1.1"
     },
     "jest": {

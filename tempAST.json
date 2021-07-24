@@ -1,0 +1,60 @@
+{
+    "type": "ObjectExpression",
+    "start": 8,
+    "end": 29,
+    "properties": [
+        {
+            "type": "Property",
+            "start": 9,
+            "end": 28,
+            "key": {
+                "type": "Literal",
+                "start": 9,
+                "end": 16,
+                "value": "array",
+                "raw": "array"
+            },
+            "value": {
+                "type": "ArrayExpression",
+                "start": 17,
+                "end": 28,
+                "elements": [
+                    {
+                        "type": "Literal",
+                        "start": 18,
+                        "end": 21,
+                        "value": "1",
+                        "raw": "1",
+                        "path": "ObjectExpression.Property.ArrayExpression.Literal",
+                        "name": "1"
+                    },
+                    {
+                        "type": "ArrayExpression",
+                        "start": 22,
+                        "end": 27,
+                        "elements": [
+                            {
+                                "type": "Literal",
+                                "start": 23,
+                                "end": 26,
+                                "value": "2",
+                                "raw": "2",
+                                "path": "ObjectExpression.Property.ArrayExpression.ArrayExpression.Literal",
+                                "name": "2"
+                            }
+                        ],
+                        "path": "ObjectExpression.Property.ArrayExpression.ArrayExpression",
+                        "name": "array[1]"
+                    }
+                ],
+                "path": "ObjectExpression.Property.ArrayExpression",
+                "name": "array"
+            },
+            "kind": "init",
+            "path": "ObjectExpression.Property",
+            "name": "array"
+        }
+    ],
+    "path": "ObjectExpression",
+    "name": "root"
+}
