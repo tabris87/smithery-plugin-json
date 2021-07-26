@@ -24,6 +24,7 @@
     },
     "devDependencies": {
         "chai": "^4.3.4",
+        "chai-exclude": "^2.0.3",
         "jest": "^25.1.0",
         "jest-html-reporters": "^1.2.1",
         "mocha": "^9.0.2",
