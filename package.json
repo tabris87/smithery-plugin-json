@@ -9,50 +9,23 @@
     "license": "Apache-2.0",
     "description": "A plugin for smithery to support feature oriented programming with JSON",
     "type": "module",
+    "engines": {
+        "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+    },
     "scripts": {
-        "test": "mocha \"test/*.spec.js\" --diff --reporter spec --reporter mochawesome --reporter-options reportDir=reports/test-results,reportFilename=testResults",
+        "test": "mocha",
         "test-single": "mocha --diff --reporter spec ",
-        "test-debug": "mocha --inspect-brk \"test/*.spec.js\"",
         "test-debug-single": "mocha --inspect-brk"
     },
-    "main": "index.js",
+    "exports": "./index.js",
     "dependencies": {
         "escodegen": "^1.12.1",
-        "espree": "^6.1.2",
-        "estraverse": "^5.2.0",
-        "estree-walker": "^2.0.2"
+        "espree": "^6.2.1"
     },
     "devDependencies": {
         "chai": "^4.3.4",
-        "chai-exclude": "^2.0.3",
-        "jest": "^25.1.0",
-        "jest-html-reporters": "^1.2.1",
-        "mocha": "^9.0.2",
+        "mocha": "^9.0.3",
         "mochawesome": "^6.2.2",
-        "smithery": "file:../smithery/smithery-core/smithery-0.6.2.tgz",
-        "smithery-equipment": "^0.1.1"
-    },
-    "jest": {
-        "testEnvironment": "node",
-        "roots": [
-            "test"
-        ],
-        "collectCoverage": true,
-        "coverageReporters": [
-            "text",
-            "html"
-        ],
-        "reporters": [
-            "default",
-            [
-                "jest-html-reporters",
-                {
-                    "filename": "./test/latestTests.html",
-                    "expand": false,
-                    "pageTitle": "featureJS-plugin-JSON",
-                    "hideIcon": true
-                }
-            ]
-        ]
+        "smithery": "file:../smithery/smithery-core/smithery-0.6.2.tgz"
     }
 }

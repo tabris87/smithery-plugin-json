@@ -1,12 +1,17 @@
-module.exports = {
-    rules: require('./lib/rules'),
+import * as rules from './lib/rules/index.js';
+import { Parser } from './lib/parser.js';
+import { Generator } from './lib/generator.js';
+
+
+export const a = {
+    rules,
     parser: {
         fileEnding: "json",
-        parser: require('./lib/parser')
+        parser: Parser
     },
     generator: {
         fileEnding: "json",
-        generator: require('./lib/generator')
+        generator: Generator
     }
     /* ,
         dependencies: [] */

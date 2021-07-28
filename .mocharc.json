@@ -1,0 +1,20 @@
+{
+    "diff": true,
+    "extension": [
+        "spec.js"
+    ],
+    "spec": [
+        "test/**/*.spec.js",
+        "lib/**/*.spec.js"
+    ],
+    "ignore": "node_modules",
+    "package": "./package.json",
+    "reporter": [
+        "spec",
+        "mochawesome"
+    ],
+    "reporter-option": [
+        "reportDir=reports/test-results",
+        "reportFilename=testResults"
+    ]
+}
