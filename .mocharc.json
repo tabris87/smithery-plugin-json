@@ -7,7 +7,10 @@
         "test/**/*.spec.js",
         "lib/**/*.spec.js"
     ],
-    "ignore": "node_modules",
+    "ignore": [
+        "node_modules",
+        "index.js"
+    ],
     "package": "./package.json",
     "reporter": [
         "spec",
