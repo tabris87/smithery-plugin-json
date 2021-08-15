@@ -14,8 +14,8 @@
     },
     "scripts": {
         "test": "mocha",
-        "test-single": "mocha --diff --reporter spec ",
-        "test-debug-single": "mocha --inspect-brk"
+        "test-single": "mocha --no-config --diff --reporter spec ",
+        "test-debug-single": "mocha --no-config --inspect-brk "
     },
     "exports": "./index.js",
     "dependencies": {
