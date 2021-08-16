@@ -5,9 +5,9 @@
     "passes": 54,
     "pending": 2,
     "failures": 0,
-    "start": "2021-08-15T21:41:55.109Z",
-    "end": "2021-08-15T21:41:55.176Z",
-    "duration": 67,
+    "start": "2021-08-16T19:55:09.213Z",
+    "end": "2021-08-16T19:55:09.301Z",
+    "duration": 88,
     "testsRegistered": 56,
     "passPercent": 100,
     "pendingPercent": 3.571428571428571,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a1f87431-fd5d-48a4-8b5d-b38e0f5aefe5",
+      "uuid": "0cfdb54a-3df9-427e-9dcf-6420d1865d93",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f687dc21-a9ae-4047-99c7-84a40d919121",
+          "uuid": "92d838df-2765-45db-a361-52c1db3679d4",
           "title": "Check different imposings from an object root element",
           "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\test\\imposeObjectRoot.spec.js",
           "file": "\\test\\imposeObjectRoot.spec.js",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "f88ae811-e12a-496f-b098-fb39ae470bfd",
+              "uuid": "261e13e9-6abb-4eba-855a-84dfa1bf8796",
               "title": "First level property imposing",
               "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\test\\imposeObjectRoot.spec.js",
               "file": "\\test\\imposeObjectRoot.spec.js",
@@ -47,7 +47,7 @@
                   "title": "Test simple property addition",
                   "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property addition",
                   "timedOut": false,
-                  "duration": 9,
+                  "duration": 12,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -56,50 +56,14 @@
                   "context": null,
                   "code": "const sBaseJSON = '{\"simple\":\"base\"}';\nconst sFeatureJSON = '{\"additional\":\"feature\"}';\nconst sResultJSON = formatResult('{\"simple\":\"base\",\"additional\":\"feature\"}');\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
                   "err": {},
-                  "uuid": "672afba8-9c0b-48b7-b3d9-939ac6e7a338",
-                  "parentUUID": "f88ae811-e12a-496f-b098-fb39ae470bfd",
+                  "uuid": "adde82e6-f602-4673-bb84-c658352a6d78",
+                  "parentUUID": "261e13e9-6abb-4eba-855a-84dfa1bf8796",
                   "isHook": false,
                   "skipped": false
                 },
                 {
                   "title": "Test simple property replace \"base\" -> \"feature\"",
                   "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property replace \"base\" -> \"feature\"",
-                  "timedOut": false,
-                  "duration": 1,
-                  "state": "passed",
-                  "speed": "fast",
-                  "pass": true,
-                  "fail": false,
-                  "pending": false,
-                  "context": null,
-                  "code": "const sBaseJSON = '{\"simple\":\"base\"}';\nconst sFeatureJSON = '{\"simple\":\"feature\"}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
-                  "err": {},
-                  "uuid": "a471c6dc-8124-48f3-9b1d-63e94ce5ccaf",
-                  "parentUUID": "f88ae811-e12a-496f-b098-fb39ae470bfd",
-                  "isHook": false,
-                  "skipped": false
-                },
-                {
-                  "title": "Test simple property replace 1 -> 2",
-                  "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property replace 1 -> 2",
-                  "timedOut": false,
-                  "duration": 1,
-                  "state": "passed",
-                  "speed": "fast",
-                  "pass": true,
-                  "fail": false,
-                  "pending": false,
-                  "context": null,
-                  "code": "const sBaseJSON = '{\"number\":1}';\nconst sFeatureJSON = '{\"number\":2}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
-                  "err": {},
-                  "uuid": "d682677b-4cca-435d-bcaa-74baee67f8f9",
-                  "parentUUID": "f88ae811-e12a-496f-b098-fb39ae470bfd",
-                  "isHook": false,
-                  "skipped": false
-                },
-                {
-                  "title": "Test simple property replace 1 -> {}",
-                  "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property replace 1 -> {}",
                   "timedOut": false,
                   "duration": 2,
                   "state": "passed",
@@ -108,16 +72,34 @@
                   "fail": false,
                   "pending": false,
                   "context": null,
-                  "code": "const sBaseJSON = '{\"number\":1}';\nconst sFeatureJSON = '{\"number\":{}}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "code": "const sBaseJSON = '{\"simple\":\"base\"}';\nconst sFeatureJSON = '{\"simple\":\"feature\"}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
                   "err": {},
-                  "uuid": "34c824d2-be48-421f-83dc-313b8b717253",
-                  "parentUUID": "f88ae811-e12a-496f-b098-fb39ae470bfd",
+                  "uuid": "aac715b8-e05c-42b6-a19d-edb77be9768b",
+                  "parentUUID": "261e13e9-6abb-4eba-855a-84dfa1bf8796",
                   "isHook": false,
                   "skipped": false
                 },
                 {
-                  "title": "Test simple property replace 1 -> []",
-                  "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property replace 1 -> []",
+                  "title": "Test simple property replace 1 -> 2",
+                  "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property replace 1 -> 2",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const sBaseJSON = '{\"number\":1}';\nconst sFeatureJSON = '{\"number\":2}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {},
+                  "uuid": "4e6a269d-1e80-489f-9838-8169477a23cd",
+                  "parentUUID": "261e13e9-6abb-4eba-855a-84dfa1bf8796",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test simple property replace 1 -> {}",
+                  "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property replace 1 -> {}",
                   "timedOut": false,
                   "duration": 1,
                   "state": "passed",
@@ -126,32 +108,50 @@
                   "fail": false,
                   "pending": false,
                   "context": null,
+                  "code": "const sBaseJSON = '{\"number\":1}';\nconst sFeatureJSON = '{\"number\":{}}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
+                  "err": {},
+                  "uuid": "a87ede15-068c-4849-b0a1-168de31f5b5c",
+                  "parentUUID": "261e13e9-6abb-4eba-855a-84dfa1bf8796",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Test simple property replace 1 -> []",
+                  "fullTitle": "Check different imposings from an object root element First level property imposing Test simple property replace 1 -> []",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
                   "code": "const sBaseJSON = '{\"number\":1}';\nconst sFeatureJSON = '{\"number\":[]}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
                   "err": {},
-                  "uuid": "531d30ee-4daa-4946-acbe-f9d9e69694b0",
-                  "parentUUID": "f88ae811-e12a-496f-b098-fb39ae470bfd",
+                  "uuid": "d0a4fe50-0e37-4313-a478-f66126ffdbd1",
+                  "parentUUID": "261e13e9-6abb-4eba-855a-84dfa1bf8796",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "672afba8-9c0b-48b7-b3d9-939ac6e7a338",
-                "a471c6dc-8124-48f3-9b1d-63e94ce5ccaf",
-                "d682677b-4cca-435d-bcaa-74baee67f8f9",
-                "34c824d2-be48-421f-83dc-313b8b717253",
-                "531d30ee-4daa-4946-acbe-f9d9e69694b0"
+                "adde82e6-f602-4673-bb84-c658352a6d78",
+                "aac715b8-e05c-42b6-a19d-edb77be9768b",
+                "4e6a269d-1e80-489f-9838-8169477a23cd",
+                "a87ede15-068c-4849-b0a1-168de31f5b5c",
+                "d0a4fe50-0e37-4313-a478-f66126ffdbd1"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 14,
+              "duration": 19,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "3108b6cd-bb92-4274-932d-5d24d0251c3e",
+              "uuid": "ea4cede4-b610-409f-aa51-919189ce6ff5",
               "title": "Property replacement",
               "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\test\\imposeObjectRoot.spec.js",
               "file": "\\test\\imposeObjectRoot.spec.js",
@@ -162,7 +162,7 @@
                   "title": "Test object property replace {} -> 1",
                   "fullTitle": "Check different imposings from an object root element Property replacement Test object property replace {} -> 1",
                   "timedOut": false,
-                  "duration": 1,
+                  "duration": 2,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -171,8 +171,8 @@
                   "context": null,
                   "code": "const sBaseJSON = '{\"object\":{\"test\":1}}';\nconst sFeatureJSON = '{\"object\":1}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
                   "err": {},
-                  "uuid": "0d60db65-c940-4bba-af66-0b0dac0bc565",
-                  "parentUUID": "3108b6cd-bb92-4274-932d-5d24d0251c3e",
+                  "uuid": "5cf718c3-a942-45f6-92ef-57278470a591",
+                  "parentUUID": "ea4cede4-b610-409f-aa51-919189ce6ff5",
                   "isHook": false,
                   "skipped": false
                 },
@@ -180,7 +180,7 @@
                   "title": "Test array property replace [] -> 1",
                   "fullTitle": "Check different imposings from an object root element Property replacement Test array property replace [] -> 1",
                   "timedOut": false,
-                  "duration": 2,
+                  "duration": 1,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -189,16 +189,16 @@
                   "context": null,
                   "code": "const sBaseJSON = '{\"array\":[\"1\"]}';\nconst sFeatureJSON = '{\"array\":1}';\nconst sResultJSON = formatResult(sFeatureJSON);\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
                   "err": {},
-                  "uuid": "8683d95a-609a-435a-a215-4441b1457c42",
-                  "parentUUID": "3108b6cd-bb92-4274-932d-5d24d0251c3e",
+                  "uuid": "f76aca06-4574-4f67-9f5c-a741aadc8c0f",
+                  "parentUUID": "ea4cede4-b610-409f-aa51-919189ce6ff5",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "0d60db65-c940-4bba-af66-0b0dac0bc565",
-                "8683d95a-609a-435a-a215-4441b1457c42"
+                "5cf718c3-a942-45f6-92ef-57278470a591",
+                "f76aca06-4574-4f67-9f5c-a741aadc8c0f"
               ],
               "failures": [],
               "pending": [],
@@ -209,7 +209,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "277d981a-6291-4be1-981d-a0024ccde3f5",
+              "uuid": "d2123c61-0ad6-4e06-a38b-8ad1e8c5945e",
               "title": "Property merge",
               "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\test\\imposeObjectRoot.spec.js",
               "file": "\\test\\imposeObjectRoot.spec.js",
@@ -220,7 +220,7 @@
                   "title": "Test array property merge [\"1\", \"2\"] + [\"3\"] => [\"1\", \"2\", \"3\"]",
                   "fullTitle": "Check different imposings from an object root element Property merge Test array property merge [\"1\", \"2\"] + [\"3\"] => [\"1\", \"2\", \"3\"]",
                   "timedOut": false,
-                  "duration": 2,
+                  "duration": 3,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -229,8 +229,8 @@
                   "context": null,
                   "code": "const sBaseJSON = '{\"array\":[\"1\", \"2\"]}';\nconst sFeatureJSON = '{\"array\":[\"3\"]}';\nconst sResultJSON = formatResult('{\"array\": [\"1\",\"2\",\"3\"]}');\ndebugger;\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
                   "err": {},
-                  "uuid": "fd2db74c-50bc-4f3d-9eb6-5ec3811ec512",
-                  "parentUUID": "277d981a-6291-4be1-981d-a0024ccde3f5",
+                  "uuid": "397088c4-d644-4054-8971-fabc5a6448e3",
+                  "parentUUID": "d2123c61-0ad6-4e06-a38b-8ad1e8c5945e",
                   "isHook": false,
                   "skipped": false
                 },
@@ -247,8 +247,8 @@
                   "context": null,
                   "code": "const sBaseJSON = '{\"array\":[\"1\"]}';\nconst sFeatureJSON = '{\"array\":[{\"number\": 2}]}';\nconst sResultJSON = formatResult('{\"array\": [\"1\", {\"number\": 2}]}');\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
                   "err": {},
-                  "uuid": "8a496f4d-04d8-4fc9-bca0-f6a4f2f67a98",
-                  "parentUUID": "277d981a-6291-4be1-981d-a0024ccde3f5",
+                  "uuid": "7252081b-d232-4117-ab3d-35b1403c5e83",
+                  "parentUUID": "d2123c61-0ad6-4e06-a38b-8ad1e8c5945e",
                   "isHook": false,
                   "skipped": false
                 },
@@ -256,7 +256,7 @@
                   "title": "Test array property merge [\"1\"] + [[\"2\"]] => [\"1\", [\"2\"]]",
                   "fullTitle": "Check different imposings from an object root element Property merge Test array property merge [\"1\"] + [[\"2\"]] => [\"1\", [\"2\"]]",
                   "timedOut": false,
-                  "duration": 2,
+                  "duration": 3,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -265,8 +265,8 @@
                   "context": null,
                   "code": "const sBaseJSON = '{\"array\":[\"1\"]}';\nconst sFeatureJSON = '{\"array\":[[\"2\"]]}';\nconst sResultJSON = formatResult('{\"array\": [\"1\", [\"2\"]]}');\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
                   "err": {},
-                  "uuid": "e2b4e552-3248-4ed8-85ff-a183eb394ab5",
-                  "parentUUID": "277d981a-6291-4be1-981d-a0024ccde3f5",
+                  "uuid": "baaf28dd-e554-469d-99c3-aee4524fb096",
+                  "parentUUID": "d2123c61-0ad6-4e06-a38b-8ad1e8c5945e",
                   "isHook": false,
                   "skipped": false
                 },
@@ -274,7 +274,7 @@
                   "title": "Test array property merge [[\"1\"], [\"2\"]] + [[\"3\"]] => [[\"1\"], [\"2\"], [\"3\"]]",
                   "fullTitle": "Check different imposings from an object root element Property merge Test array property merge [[\"1\"], [\"2\"]] + [[\"3\"]] => [[\"1\"], [\"2\"], [\"3\"]]",
                   "timedOut": false,
-                  "duration": 1,
+                  "duration": 3,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -283,8 +283,8 @@
                   "context": null,
                   "code": "const sBaseJSON = '{\"array\":[[\"1\"], [\"2\"]]}';\nconst sFeatureJSON = '{\"array\":[[\"3\"]]}';\nconst sResultJSON = formatResult('{\"array\": [[\"1\"], [\"2\"], [\"3\"]]}');\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
                   "err": {},
-                  "uuid": "f46a07d8-d069-4ce0-89d7-5cd5deda6b04",
-                  "parentUUID": "277d981a-6291-4be1-981d-a0024ccde3f5",
+                  "uuid": "b82609d6-3807-4525-a8ae-5ad17c2856f0",
+                  "parentUUID": "d2123c61-0ad6-4e06-a38b-8ad1e8c5945e",
                   "isHook": false,
                   "skipped": false
                 },
@@ -292,7 +292,7 @@
                   "title": "Test array property merge [{\"prop\":\"1\"}, {\"prop\":\"2\"}] + [{\"prop\":\"3\"}] => [{\"prop\":\"1\"}, {\"prop\":\"2\"}, {\"prop\":\"3\"}]",
                   "fullTitle": "Check different imposings from an object root element Property merge Test array property merge [{\"prop\":\"1\"}, {\"prop\":\"2\"}] + [{\"prop\":\"3\"}] => [{\"prop\":\"1\"}, {\"prop\":\"2\"}, {\"prop\":\"3\"}]",
                   "timedOut": false,
-                  "duration": 2,
+                  "duration": 5,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -301,24 +301,24 @@
                   "context": null,
                   "code": "const sBaseJSON = '{\"array\":[{\"prop\":\"1\"}, {\"prop\":\"2\"}]}';\nconst sFeatureJSON = '{\"array\":[{\"prop\":\"3\"}]}';\nconst sResultJSON = formatResult('{\"array\": [{\"prop\":\"1\"}, {\"prop\":\"2\"}, {\"prop\":\"3\"}]}');\nexpect(imposing(sBaseJSON, sFeatureJSON)).to.be.equal(sResultJSON);",
                   "err": {},
-                  "uuid": "322c4cb0-8de0-49d3-beca-ce179ad368e7",
-                  "parentUUID": "277d981a-6291-4be1-981d-a0024ccde3f5",
+                  "uuid": "c4b6132c-2517-436b-96df-6f8b24f4088f",
+                  "parentUUID": "d2123c61-0ad6-4e06-a38b-8ad1e8c5945e",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "fd2db74c-50bc-4f3d-9eb6-5ec3811ec512",
-                "8a496f4d-04d8-4fc9-bca0-f6a4f2f67a98",
-                "e2b4e552-3248-4ed8-85ff-a183eb394ab5",
-                "f46a07d8-d069-4ce0-89d7-5cd5deda6b04",
-                "322c4cb0-8de0-49d3-beca-ce179ad368e7"
+                "397088c4-d644-4054-8971-fabc5a6448e3",
+                "7252081b-d232-4117-ab3d-35b1403c5e83",
+                "baaf28dd-e554-469d-99c3-aee4524fb096",
+                "b82609d6-3807-4525-a8ae-5ad17c2856f0",
+                "c4b6132c-2517-436b-96df-6f8b24f4088f"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 9,
+              "duration": 16,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -334,7 +334,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "495d4bc3-d525-4177-93a4-44cfc3d87adb",
+          "uuid": "0bbd3f95-ed18-4053-abf4-7f30c2835c1d",
           "title": "Transformation Strategies",
           "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
           "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -343,7 +343,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "9cba92a9-4fad-4b5d-8ec4-008e376b679b",
+              "uuid": "9ef2f618-ff3a-4e89-9b1d-5f651ca47fed",
               "title": "Check the conversion strategy for ArrayExpressions",
               "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
               "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -352,7 +352,7 @@
               "tests": [],
               "suites": [
                 {
-                  "uuid": "1055fdeb-f5ca-4fef-81f1-d7505582a0de",
+                  "uuid": "2fcd456a-a926-4c9b-8b46-8d6f3808c350",
                   "title": "Test the AST to FST conversion",
                   "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
                   "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -370,8 +370,8 @@
                       "context": null,
                       "code": "//setup the base AST structure\nrootAST = {\n    \"type\": \"ArrayExpression\",\n    \"start\": 0,\n    \"end\": 1,\n    \"elements\": []\n};\n//setup the base FST structure\ntempResultFST = new FSTTerminal('ArrayExpression', 'root');\ntempResultFST.setMergeStrategy('listConcat');\ntempResultFST.setCodeLanguage('json');",
                       "err": {},
-                      "uuid": "feb3701e-17ff-445f-a136-7c873daaf9f7",
-                      "parentUUID": "1055fdeb-f5ca-4fef-81f1-d7505582a0de",
+                      "uuid": "41c64b13-6a83-4267-a5f0-da5fb6ec0a36",
+                      "parentUUID": "2fcd456a-a926-4c9b-8b46-8d6f3808c350",
                       "isHook": true,
                       "skipped": false
                     }
@@ -382,7 +382,7 @@
                       "title": "Successfull FST transformation for an empty ArrayExpression ('[]')",
                       "fullTitle": "Transformation Strategies Check the conversion strategy for ArrayExpressions Test the AST to FST conversion Successfull FST transformation for an empty ArrayExpression ('[]')",
                       "timedOut": false,
-                      "duration": 0,
+                      "duration": 1,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -391,8 +391,8 @@
                       "context": null,
                       "code": "tempResultFST.setContent([]);\ntempResultFST.setParent();\ntempResultFST.originNode = \"{\\\"type\\\":\\\"ArrayExpression\\\"}\";\nconst transformedFST = arrayExpStrategy.toFST(rootAST);\nexpect(transformedFST).not.to.be.undefined;\nexpect(transformedFST instanceof FSTTerminal).to.be.true;\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "373bf59a-f548-40ef-b97d-178f7797dde4",
-                      "parentUUID": "1055fdeb-f5ca-4fef-81f1-d7505582a0de",
+                      "uuid": "6fbf0e40-3697-4da3-8433-e1246afd64d6",
+                      "parentUUID": "2fcd456a-a926-4c9b-8b46-8d6f3808c350",
                       "isHook": false,
                       "skipped": false
                     },
@@ -400,7 +400,7 @@
                       "title": "Successfull FST transformation for an ArrayExpression filled by numbers ('[1,2,3,4]')",
                       "fullTitle": "Transformation Strategies Check the conversion strategy for ArrayExpressions Test the AST to FST conversion Successfull FST transformation for an ArrayExpression filled by numbers ('[1,2,3,4]')",
                       "timedOut": false,
-                      "duration": 0,
+                      "duration": 1,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -409,8 +409,8 @@
                       "context": null,
                       "code": "tempResultFST.setContent([\"1\", \"2\", \"3\", \"4\"]);\ntempResultFST.setParent();\ntempResultFST.originNode = \"{\\\"type\\\":\\\"ArrayExpression\\\"}\";\nrootAST.elements.push({\n    \"type\": \"Literal\",\n    \"value\": 1,\n    \"raw\": \"1\"\n});\nrootAST.elements.push({\n    \"type\": \"Literal\",\n    \"value\": 2,\n    \"raw\": \"2\"\n});\nrootAST.elements.push({\n    \"type\": \"Literal\",\n    \"value\": 3,\n    \"raw\": \"3\"\n});\nrootAST.elements.push({\n    \"type\": \"Literal\",\n    \"value\": 4,\n    \"raw\": \"4\"\n});\nconst transformedFST = arrayExpStrategy.toFST(rootAST);\nexpect(transformedFST).not.to.be.undefined;\nexpect(transformedFST instanceof FSTTerminal).to.be.true;\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "e1f230b4-2151-4918-8f6d-f2e79f3178ff",
-                      "parentUUID": "1055fdeb-f5ca-4fef-81f1-d7505582a0de",
+                      "uuid": "889bab5f-bf2c-4cf9-b590-b91c96927a37",
+                      "parentUUID": "2fcd456a-a926-4c9b-8b46-8d6f3808c350",
                       "isHook": false,
                       "skipped": false
                     },
@@ -418,7 +418,7 @@
                       "title": "Successfull FST transformation for an ArrayExpression filled by strings ('[\"a\",\"b\",\"c\",\"d\"]')",
                       "fullTitle": "Transformation Strategies Check the conversion strategy for ArrayExpressions Test the AST to FST conversion Successfull FST transformation for an ArrayExpression filled by strings ('[\"a\",\"b\",\"c\",\"d\"]')",
                       "timedOut": false,
-                      "duration": 0,
+                      "duration": 1,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -427,8 +427,8 @@
                       "context": null,
                       "code": "tempResultFST.setContent([\"\\\"a\\\"\", \"\\\"b\\\"\", \"\\\"c\\\"\", \"\\\"d\\\"\"]);\n                tempResultFST.setParent();\n                tempResultFST.originNode = \"{\\\"type\\\":\\\"ArrayExpression\\\"}\";\n                rootAST.elements.push({\n                    \"type\": \"Literal\",\n                    \"value\": \"a\",\n                    \"raw\": \"'a'\"\n                });\n                rootAST.elements.push({\n                    \"type\": \"Literal\",\n                    \"value\": \"b\",\n                    \"raw\": \"'b'\"\n                });\n                rootAST.elements.push({\n                    \"type\": \"Literal\",\n                    \"value\": \"c\",\n                    \"raw\": \"'c'\"\n                });\n                rootAST.elements.push({\n                    \"type\": \"Literal\",\n                    \"value\": \"d\",\n                    \"raw\": \"'d'\"\n                });\n                const transformedFST = arrayExpStrategy.toFST(rootAST);\n                expect(transformedFST).not.to.be.undefined;\n                expect(transformedFST instanceof FSTTerminal).to.be.true;\n                expect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "baf4605b-dc77-423c-a8c6-5927e7dbe5eb",
-                      "parentUUID": "1055fdeb-f5ca-4fef-81f1-d7505582a0de",
+                      "uuid": "f4b480b9-d056-4c7c-bfe8-b558d563a0b7",
+                      "parentUUID": "2fcd456a-a926-4c9b-8b46-8d6f3808c350",
                       "isHook": false,
                       "skipped": false
                     },
@@ -436,7 +436,7 @@
                       "title": "Successfull FST transformation for an ArrayExpression filled by objects (\"[{\"hello\": \"World\"}, {\"say\": 2}, {\"return\": false}]\")",
                       "fullTitle": "Transformation Strategies Check the conversion strategy for ArrayExpressions Test the AST to FST conversion Successfull FST transformation for an ArrayExpression filled by objects (\"[{\"hello\": \"World\"}, {\"say\": 2}, {\"return\": false}]\")",
                       "timedOut": false,
-                      "duration": 0,
+                      "duration": 1,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -445,8 +445,8 @@
                       "context": null,
                       "code": "tempResultFST.setContent([\"{\\n  \\\"hello\\\": \\\"World\\\"\\n}\", \"{\\n  \\\"say\\\": 2\\n}\", \"{\\n  \\\"return\\\": false\\n}\"]);\n                tempResultFST.setParent();\n                tempResultFST.originNode = \"{\\\"type\\\":\\\"ArrayExpression\\\"}\";\n                rootAST.elements.push({\n                    type: \"ObjectExpression\",\n                    properties: [\n                        {\n                            type: \"Property\",\n                            key: {\n                                type: \"Identifier\",\n                                name: \"hello\"\n                            },\n                            value: {\n                                type: \"Literal\",\n                                value: \"World\",\n                                raw: \"\\\"World\\\"\"\n                            },\n                            kind: \"init\"\n                        }\n                    ]\n                });\n                rootAST.elements.push({\n                    type: \"ObjectExpression\",\n                    properties: [\n                        {\n                            type: \"Property\",\n                            key: {\n                                type: \"Identifier\",\n                                name: \"say\"\n                            },\n                            value: {\n                                type: \"Literal\",\n                                value: 2,\n                                raw: \"2\"\n                            },\n                            kind: \"init\"\n                        }\n                    ]\n                });\n                rootAST.elements.push({\n                    type: \"ObjectExpression\",\n                    properties: [\n                        {\n                            type: \"Property\",\n                            key: {\n                                type: \"Identifier\",\n                                name: \"return\"\n                            },\n                            value: {\n                                type: \"Literal\",\n                                value: false,\n                                raw: \"false\"\n                            },\n                            kind: \"init\"\n                        }\n                    ]\n                });\n                const transformedFST = arrayExpStrategy.toFST(rootAST);\n                expect(transformedFST).not.to.be.undefined;\n                expect(transformedFST instanceof FSTTerminal).to.be.true;\n                expect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "1ff36019-240b-4352-b237-4709ead4a1fd",
-                      "parentUUID": "1055fdeb-f5ca-4fef-81f1-d7505582a0de",
+                      "uuid": "aee9a4b2-4124-4c91-9648-87472489c4a8",
+                      "parentUUID": "2fcd456a-a926-4c9b-8b46-8d6f3808c350",
                       "isHook": false,
                       "skipped": false
                     },
@@ -463,30 +463,30 @@
                       "context": null,
                       "code": "tempResultFST.setContent([\n                    \"[\\n  \\\"a\\\",\\n  \\\"b\\\",\\n  \\\"c\\\",\\n  \\\"d\\\"\\n]\",\n                    \"[\\n  1,\\n  2,\\n  3,\\n  4\\n]\",\n                    \"[\\n  {\\n    \\\"hello\\\": \\\"World\\\"\\n  },\\n  {\\n    \\\"say\\\": 2\\n  },\\n  {\\n    \\\"return\\\": false\\n  }\\n]\"\n                ]);\n                tempResultFST.setParent();\n                tempResultFST.originNode = \"{\\\"type\\\":\\\"ArrayExpression\\\"}\";\n                rootAST.elements.push({\n                    type: \"ArrayExpression\",\n                    elements: [\n                        {\n                            type: \"Literal\",\n                            value: \"a\",\n                            raw: \"\\\"a\\\"\"\n                        },\n                        {\n                            type: \"Literal\",\n                            value: \"b\",\n                            raw: \"\\\"b\\\"\"\n                        },\n                        {\n                            type: \"Literal\",\n                            value: \"c\",\n                            raw: \"\\\"c\\\"\"\n                        },\n                        {\n                            type: \"Literal\",\n                            value: \"d\",\n                            raw: \"\\\"d\\\"\"\n                        }\n                    ]\n                });\n                rootAST.elements.push({\n                    type: \"ArrayExpression\",\n                    elements: [\n                        {\n                            type: \"Literal\",\n                            value: 1,\n                            raw: \"1\"\n                        },\n                        {\n                            type: \"Literal\",\n                            value: 2,\n                            raw: \"2\"\n                        },\n                        {\n                            type: \"Literal\",\n                            value: 3,\n                            raw: \"3\"\n                        },\n                        {\n                            type: \"Literal\",\n                            value: 4,\n                            raw: \"4\"\n                        }\n                    ]\n                });\n                rootAST.elements.push({\n                    type: \"ArrayExpression\",\n                    elements: [\n                        {\n                            type: \"ObjectExpression\",\n                            properties: [\n                                {\n                                    type: \"Property\",\n                                    key: {\n                                        type: \"Identifier\",\n                                        name: \"hello\"\n                                    },\n                                    value: {\n                                        type: \"Literal\",\n                                        value: \"World\",\n                                        raw: \"\\\"World\\\"\"\n                                    },\n                                    kind: \"init\"\n                                }\n                            ]\n                        },\n                        {\n                            type: \"ObjectExpression\",\n                            properties: [\n                                {\n                                    type: \"Property\",\n                                    key: {\n                                        type: \"Identifier\",\n                                        name: \"say\"\n                                    },\n                                    value: {\n                                        type: \"Literal\",\n                                        value: 2,\n                                        raw: \"2\"\n                                    },\n                                    kind: \"init\"\n                                }\n                            ]\n                        },\n                        {\n                            type: \"ObjectExpression\",\n                            properties: [\n                                {\n                                    type: \"Property\",\n                                    key: {\n                                        type: \"Identifier\",\n                                        name: \"return\"\n                                    },\n                                    value: {\n                                        type: \"Literal\",\n                                        value: false,\n                                        raw: \"false\"\n                                    },\n                                    kind: \"init\"\n                                }\n                            ]\n                        }\n                    ]\n                });\n                const transformedFST = arrayExpStrategy.toFST(rootAST);\n                expect(transformedFST).not.to.be.undefined;\n                expect(transformedFST instanceof FSTTerminal).to.be.true;\n                expect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "c1d6a53d-4623-4c4d-97f7-7e56b6a31ac7",
-                      "parentUUID": "1055fdeb-f5ca-4fef-81f1-d7505582a0de",
+                      "uuid": "3258b827-cf03-4296-8b13-2df9ef695629",
+                      "parentUUID": "2fcd456a-a926-4c9b-8b46-8d6f3808c350",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
                   "passes": [
-                    "373bf59a-f548-40ef-b97d-178f7797dde4",
-                    "e1f230b4-2151-4918-8f6d-f2e79f3178ff",
-                    "baf4605b-dc77-423c-a8c6-5927e7dbe5eb",
-                    "1ff36019-240b-4352-b237-4709ead4a1fd",
-                    "c1d6a53d-4623-4c4d-97f7-7e56b6a31ac7"
+                    "6fbf0e40-3697-4da3-8433-e1246afd64d6",
+                    "889bab5f-bf2c-4cf9-b590-b91c96927a37",
+                    "f4b480b9-d056-4c7c-bfe8-b558d563a0b7",
+                    "aee9a4b2-4124-4c91-9648-87472489c4a8",
+                    "3258b827-cf03-4296-8b13-2df9ef695629"
                   ],
                   "failures": [],
                   "pending": [],
                   "skipped": [],
-                  "duration": 1,
+                  "duration": 5,
                   "root": false,
                   "rootEmpty": false,
                   "_timeout": 2000
                 },
                 {
-                  "uuid": "355a8b49-2e92-4b7e-91c7-0f16521634c4",
+                  "uuid": "4e66c5f9-b9ab-4024-afdf-7ba5a2f366c4",
                   "title": "Test the FST to AST conversion",
                   "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
                   "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -504,8 +504,8 @@
                       "context": null,
                       "code": "//setup the base AST structure\nresultAST = {\n    \"type\": \"ArrayExpression\",\n    \"elements\": []\n};\n//setup the base FST structure\nrootFST = new FSTTerminal('ArrayExpression', 'root');\nrootFST.setMergeStrategy('listConcat');\nrootFST.setCodeLanguage('json');",
                       "err": {},
-                      "uuid": "ffba0835-200a-4537-8343-fe7fe3b415db",
-                      "parentUUID": "355a8b49-2e92-4b7e-91c7-0f16521634c4",
+                      "uuid": "c39dd18d-b592-4ce7-a447-c34e4a11c1a5",
+                      "parentUUID": "4e66c5f9-b9ab-4024-afdf-7ba5a2f366c4",
                       "isHook": true,
                       "skipped": false
                     }
@@ -525,8 +525,8 @@
                       "context": null,
                       "code": "rootFST.setContent([]);\nrootFST.setParent();\nrootFST.originNode = \"{\\\"type\\\":\\\"ArrayExpression\\\"}\";\nconst recreatedAST = arrayExpStrategy.toAST(rootFST);\nexpect(recreatedAST).not.to.be.undefined;\nexpect(recreatedAST).to.be.eql(resultAST);",
                       "err": {},
-                      "uuid": "ec0127c2-54d3-4c99-8ee1-18f4d55ce37f",
-                      "parentUUID": "355a8b49-2e92-4b7e-91c7-0f16521634c4",
+                      "uuid": "fda8efcd-ee27-43bc-8317-d02f68b34119",
+                      "parentUUID": "4e66c5f9-b9ab-4024-afdf-7ba5a2f366c4",
                       "isHook": false,
                       "skipped": false
                     },
@@ -543,8 +543,8 @@
                       "context": null,
                       "code": "rootFST.setContent([\"1\", \"2\", \"3\", \"4\"]);\nrootFST.setParent();\nrootFST.originNode = \"{\\\"type\\\":\\\"ArrayExpression\\\"}\";\nresultAST.elements.push({\n    \"type\": \"Literal\",\n    \"value\": 1,\n    \"raw\": \"1\"\n});\nresultAST.elements.push({\n    \"type\": \"Literal\",\n    \"value\": 2,\n    \"raw\": \"2\"\n});\nresultAST.elements.push({\n    \"type\": \"Literal\",\n    \"value\": 3,\n    \"raw\": \"3\"\n});\nresultAST.elements.push({\n    \"type\": \"Literal\",\n    \"value\": 4,\n    \"raw\": \"4\"\n});\nconst recreatedAST = arrayExpStrategy.toAST(rootFST);\nexpect(recreatedAST).not.to.be.undefined;\nexpect(recreatedAST).to.deep.equal(resultAST);",
                       "err": {},
-                      "uuid": "bd239d62-f628-45f9-aa14-355bfca6f33c",
-                      "parentUUID": "355a8b49-2e92-4b7e-91c7-0f16521634c4",
+                      "uuid": "34a8d8bb-edec-43e4-bb8b-7e645b14b88b",
+                      "parentUUID": "4e66c5f9-b9ab-4024-afdf-7ba5a2f366c4",
                       "isHook": false,
                       "skipped": false
                     },
@@ -561,8 +561,8 @@
                       "context": null,
                       "code": "rootFST.setContent([\"'a'\", \"'b'\", \"'c'\", \"'d'\"]);\nrootFST.setParent();\nrootFST.originNode = \"{\\\"type\\\":\\\"ArrayExpression\\\"}\";\nresultAST.elements.push({\n    \"type\": \"Literal\",\n    \"value\": \"a\",\n    \"raw\": \"\\\"a\\\"\"\n});\nresultAST.elements.push({\n    \"type\": \"Literal\",\n    \"value\": \"b\",\n    \"raw\": \"\\\"b\\\"\"\n});\nresultAST.elements.push({\n    \"type\": \"Literal\",\n    \"value\": \"c\",\n    \"raw\": \"\\\"c\\\"\"\n});\nresultAST.elements.push({\n    \"type\": \"Literal\",\n    \"value\": \"d\",\n    \"raw\": \"\\\"d\\\"\"\n});\nconst recreatedAST = arrayExpStrategy.toAST(rootFST);\nexpect(recreatedAST).not.to.be.undefined;\nexpect(recreatedAST).to.deep.equal(resultAST);",
                       "err": {},
-                      "uuid": "337fe79a-46d3-4ff8-9b1a-a06aa52504e7",
-                      "parentUUID": "355a8b49-2e92-4b7e-91c7-0f16521634c4",
+                      "uuid": "285dbf32-12c4-45bc-a681-ac28cdfb5548",
+                      "parentUUID": "4e66c5f9-b9ab-4024-afdf-7ba5a2f366c4",
                       "isHook": false,
                       "skipped": false
                     },
@@ -579,8 +579,8 @@
                       "context": null,
                       "code": "rootFST.setContent([\"{ \\\"hello\\\": \\\"World\\\" }\", \"{ \\\"say\\\": 2 }\", \"{ \\\"return\\\": false }\"]);\n                rootFST.setParent();\n                rootFST.originNode = \"{\\\"type\\\":\\\"ArrayExpression\\\"}\";\n                resultAST.elements.push({\n                    type: \"ObjectExpression\",\n                    properties: [\n                        {\n                            type: \"Property\",\n                            key: {\n                                type: \"Literal\",\n                                value: \"hello\",\n                                raw: \"\\\"hello\\\"\"\n                            },\n                            value: {\n                                type: \"Literal\",\n                                value: \"World\",\n                                raw: \"\\\"World\\\"\"\n                            },\n                            kind: \"init\"\n                        }\n                    ]\n                });\n                resultAST.elements.push({\n                    type: \"ObjectExpression\",\n                    properties: [\n                        {\n                            type: \"Property\",\n                            key: {\n                                type: \"Literal\",\n                                value: \"say\",\n                                raw: \"\\\"say\\\"\"\n                            },\n                            value: {\n                                type: \"Literal\",\n                                value: 2,\n                                raw: \"2\"\n                            },\n                            kind: \"init\"\n                        }\n                    ]\n                });\n                resultAST.elements.push({\n                    type: \"ObjectExpression\",\n                    properties: [\n                        {\n                            type: \"Property\",\n                            key: {\n                                type: \"Literal\",\n                                value: \"return\",\n                                raw: \"\\\"return\\\"\"\n                            },\n                            value: {\n                                type: \"Literal\",\n                                value: false,\n                                raw: \"false\"\n                            },\n                            kind: \"init\"\n                        }\n                    ]\n                });\n                const recreatedAST = arrayExpStrategy.toAST(rootFST);\n                expect(recreatedAST).not.to.be.undefined;\n                expect(recreatedAST).to.deep.equal(resultAST);",
                       "err": {},
-                      "uuid": "e140f994-c244-45ed-8833-5ba23bedab06",
-                      "parentUUID": "355a8b49-2e92-4b7e-91c7-0f16521634c4",
+                      "uuid": "a1f9288f-0fde-410a-a8cb-f993e88425b7",
+                      "parentUUID": "4e66c5f9-b9ab-4024-afdf-7ba5a2f366c4",
                       "isHook": false,
                       "skipped": false
                     },
@@ -597,19 +597,19 @@
                       "context": null,
                       "code": "rootFST.setContent([\n                    \"[\\n    'a',\\n    'b',\\n    'c',\\n    'd'\\n]\",\n                    \"[\\n    1,\\n    2,\\n    3,\\n    4\\n]\",\n                    \"[\\n    { \\\"hello\\\": \\\"World\\\" },\\n    { \\\"say\\\": 2 },\\n    { \\\"return\\\": false }\\n]\"\n                ]);\n                rootFST.setParent();\n                rootFST.originNode = \"{\\\"type\\\":\\\"ArrayExpression\\\"}\";\n                resultAST.elements.push({\n                    type: \"ArrayExpression\",\n                    elements: [\n                        {\n                            type: \"Literal\",\n                            value: \"a\",\n                            raw: \"\\\"a\\\"\"\n                        },\n                        {\n                            type: \"Literal\",\n                            value: \"b\",\n                            raw: \"\\\"b\\\"\"\n                        },\n                        {\n                            type: \"Literal\",\n                            value: \"c\",\n                            raw: \"\\\"c\\\"\"\n                        },\n                        {\n                            type: \"Literal\",\n                            value: \"d\",\n                            raw: \"\\\"d\\\"\"\n                        }\n                    ]\n                });\n                resultAST.elements.push({\n                    type: \"ArrayExpression\",\n                    elements: [\n                        {\n                            type: \"Literal\",\n                            value: 1,\n                            raw: \"1\"\n                        },\n                        {\n                            type: \"Literal\",\n                            value: 2,\n                            raw: \"2\"\n                        },\n                        {\n                            type: \"Literal\",\n                            value: 3,\n                            raw: \"3\"\n                        },\n                        {\n                            type: \"Literal\",\n                            value: 4,\n                            raw: \"4\"\n                        }\n                    ]\n                });\n                resultAST.elements.push({\n                    type: \"ArrayExpression\",\n                    elements: [\n                        {\n                            type: \"ObjectExpression\",\n                            properties: [\n                                {\n                                    type: \"Property\",\n                                    key: {\n                                        raw: \"\\\"hello\\\"\",\n                                        type: \"Literal\",\n                                        value: \"hello\"\n                                    },\n                                    value: {\n                                        type: \"Literal\",\n                                        value: \"World\",\n                                        raw: \"\\\"World\\\"\"\n                                    },\n                                    kind: \"init\"\n                                }\n                            ]\n                        },\n                        {\n                            type: \"ObjectExpression\",\n                            properties: [\n                                {\n                                    type: \"Property\",\n                                    key: {\n                                        raw: \"\\\"say\\\"\",\n                                        type: \"Literal\",\n                                        value: \"say\"\n                                    },\n                                    value: {\n                                        type: \"Literal\",\n                                        value: 2,\n                                        raw: \"2\"\n                                    },\n                                    kind: \"init\"\n                                }\n                            ]\n                        },\n                        {\n                            type: \"ObjectExpression\",\n                            properties: [\n                                {\n                                    type: \"Property\",\n                                    key: {\n                                        raw: \"\\\"return\\\"\",\n                                        type: \"Literal\",\n                                        value: \"return\"\n                                    },\n                                    value: {\n                                        type: \"Literal\",\n                                        value: false,\n                                        raw: \"false\"\n                                    },\n                                    kind: \"init\"\n                                }\n                            ]\n                        }\n                    ]\n                });\n                const recreatedAST = arrayExpStrategy.toAST(rootFST);\n                expect(recreatedAST).not.to.be.undefined;\n                expect(recreatedAST).to.deep.equal(resultAST);",
                       "err": {},
-                      "uuid": "e6562c9c-ade5-41eb-8689-4dc8599f6910",
-                      "parentUUID": "355a8b49-2e92-4b7e-91c7-0f16521634c4",
+                      "uuid": "d587a4aa-6197-4f57-88b8-36bdf50aeed9",
+                      "parentUUID": "4e66c5f9-b9ab-4024-afdf-7ba5a2f366c4",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
                   "passes": [
-                    "ec0127c2-54d3-4c99-8ee1-18f4d55ce37f",
-                    "bd239d62-f628-45f9-aa14-355bfca6f33c",
-                    "337fe79a-46d3-4ff8-9b1a-a06aa52504e7",
-                    "e140f994-c244-45ed-8833-5ba23bedab06",
-                    "e6562c9c-ade5-41eb-8689-4dc8599f6910"
+                    "fda8efcd-ee27-43bc-8317-d02f68b34119",
+                    "34a8d8bb-edec-43e4-bb8b-7e645b14b88b",
+                    "285dbf32-12c4-45bc-a681-ac28cdfb5548",
+                    "a1f9288f-0fde-410a-a8cb-f993e88425b7",
+                    "d587a4aa-6197-4f57-88b8-36bdf50aeed9"
                   ],
                   "failures": [],
                   "pending": [],
@@ -630,7 +630,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "aad957d2-5771-46be-afda-099ffd70d9e8",
+              "uuid": "7cf7fc66-ee14-4088-bdca-58fdde918093",
               "title": "Check the conversion strategy for Literal",
               "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
               "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -639,7 +639,7 @@
               "tests": [],
               "suites": [
                 {
-                  "uuid": "2d2b5e9a-c599-49bd-b879-5a73b5f3db00",
+                  "uuid": "79972dad-7884-4c5e-92c1-73e924f4ae24",
                   "title": "Test the AST to FST conversion",
                   "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
                   "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -657,8 +657,8 @@
                       "context": null,
                       "code": "//setup the base AST structure\nrootAST = {\n    \"type\": \"Literal\",\n    \"value\": \"\",\n    \"raw\": \"\"\n};",
                       "err": {},
-                      "uuid": "e4c74bf1-ee9b-4278-a10b-b1db44dca7c8",
-                      "parentUUID": "2d2b5e9a-c599-49bd-b879-5a73b5f3db00",
+                      "uuid": "852f1c7c-3f35-43c0-84da-90364bc43b0f",
+                      "parentUUID": "79972dad-7884-4c5e-92c1-73e924f4ae24",
                       "isHook": true,
                       "skipped": false
                     }
@@ -678,8 +678,8 @@
                       "context": null,
                       "code": "//setup the base FST structure\nconst tempResultFST = new FSTTerminal('Literal', 'Literal_');\ntempResultFST.setMergeStrategy('override');\ntempResultFST.setCodeLanguage('json');\ntempResultFST.setContent(\"\");\ntempResultFST.setParent();\ntempResultFST.originNode = \"{\\\"type\\\":\\\"Literal\\\",\\\"value\\\":\\\"\\\",\\\"raw\\\":\\\"\\\"}\";\nconst transformedFST = literalStrategy.toFST(rootAST);\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "98568ad0-4b0e-4678-9b7e-41ef2b2289d7",
-                      "parentUUID": "2d2b5e9a-c599-49bd-b879-5a73b5f3db00",
+                      "uuid": "b12368e2-7240-4b16-8f36-befc984264bf",
+                      "parentUUID": "79972dad-7884-4c5e-92c1-73e924f4ae24",
                       "isHook": false,
                       "skipped": false
                     },
@@ -687,7 +687,7 @@
                       "title": "Check correct FST transformation for a string Literal (\"a\")",
                       "fullTitle": "Transformation Strategies Check the conversion strategy for Literal Test the AST to FST conversion Check correct FST transformation for a string Literal (\"a\")",
                       "timedOut": false,
-                      "duration": 1,
+                      "duration": 0,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -696,8 +696,8 @@
                       "context": null,
                       "code": "//setup the base FST structure\nconst tempResultFST = new FSTTerminal('Literal', 'Literal_a');\ntempResultFST.setMergeStrategy('override');\ntempResultFST.setCodeLanguage('json');\ntempResultFST.setContent(\"a\");\ntempResultFST.setParent();\ntempResultFST.originNode = \"{\\\"type\\\":\\\"Literal\\\",\\\"value\\\":\\\"a\\\",\\\"raw\\\":\\\"\\\\\\\"a\\\\\\\"\\\"}\";\nrootAST.value = \"a\";\nrootAST.raw = \"\\\"a\\\"\";\nconst transformedFST = literalStrategy.toFST(rootAST);\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "acbe1855-5f89-45d6-89c4-0cccb5bc6e24",
-                      "parentUUID": "2d2b5e9a-c599-49bd-b879-5a73b5f3db00",
+                      "uuid": "84e0833d-1f36-4245-b070-3f2ce40e10b3",
+                      "parentUUID": "79972dad-7884-4c5e-92c1-73e924f4ae24",
                       "isHook": false,
                       "skipped": false
                     },
@@ -714,8 +714,8 @@
                       "context": null,
                       "code": "//setup the base FST structure\nconst tempResultFST = new FSTTerminal('Literal', 'Literal_2');\ntempResultFST.setMergeStrategy('override');\ntempResultFST.setCodeLanguage('json');\ntempResultFST.setContent(2);\ntempResultFST.setParent();\ntempResultFST.originNode = \"{\\\"type\\\":\\\"Literal\\\",\\\"value\\\":2,\\\"raw\\\":\\\"2\\\"}\";\ntempResultFST.set\nrootAST.value = 2;\nrootAST.raw = \"2\";\nconst transformedFST = literalStrategy.toFST(rootAST);\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "7f77262f-3506-4a1a-bffc-2cc06d02c2b4",
-                      "parentUUID": "2d2b5e9a-c599-49bd-b879-5a73b5f3db00",
+                      "uuid": "38159280-91c8-41de-bf04-f766f6045313",
+                      "parentUUID": "79972dad-7884-4c5e-92c1-73e924f4ae24",
                       "isHook": false,
                       "skipped": false
                     },
@@ -723,7 +723,7 @@
                       "title": "Check correct FST transformation for a boolean Literal (true)",
                       "fullTitle": "Transformation Strategies Check the conversion strategy for Literal Test the AST to FST conversion Check correct FST transformation for a boolean Literal (true)",
                       "timedOut": false,
-                      "duration": 1,
+                      "duration": 0,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -732,8 +732,8 @@
                       "context": null,
                       "code": "//setup the base FST structure\nconst tempResultFST = new FSTTerminal('Literal', 'Literal_true');\ntempResultFST.setMergeStrategy('override');\ntempResultFST.setCodeLanguage('json');\ntempResultFST.setContent(\"true\");\ntempResultFST.setParent();\ntempResultFST.originNode = \"{\\\"type\\\":\\\"Literal\\\",\\\"value\\\":\\\"true\\\",\\\"raw\\\":\\\"true\\\"}\";\nrootAST.value = \"true\";\nrootAST.raw = \"true\";\nconst transformedFST = literalStrategy.toFST(rootAST);\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "d3c55399-6246-4282-9ade-c3f899ee76af",
-                      "parentUUID": "2d2b5e9a-c599-49bd-b879-5a73b5f3db00",
+                      "uuid": "40d78a47-514c-44d2-a9a8-7507a8c1eba6",
+                      "parentUUID": "79972dad-7884-4c5e-92c1-73e924f4ae24",
                       "isHook": false,
                       "skipped": false
                     },
@@ -750,8 +750,8 @@
                       "context": null,
                       "code": "//setup the base FST structure\nconst tempResultFST = new FSTTerminal('Literal', 'Literal_false');\ntempResultFST.setMergeStrategy('override');\ntempResultFST.setCodeLanguage('json');\ntempResultFST.setContent(\"false\");\ntempResultFST.setParent();\ntempResultFST.originNode = \"{\\\"type\\\":\\\"Literal\\\",\\\"value\\\":\\\"false\\\",\\\"raw\\\":\\\"false\\\"}\";\nrootAST.value = \"false\";\nrootAST.raw = \"false\";\nconst transformedFST = literalStrategy.toFST(rootAST);\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "c24906e1-3b0a-4c2e-82f0-2a2dc4cbbbae",
-                      "parentUUID": "2d2b5e9a-c599-49bd-b879-5a73b5f3db00",
+                      "uuid": "0143473b-43a7-490a-a90b-aaa56e0e053b",
+                      "parentUUID": "79972dad-7884-4c5e-92c1-73e924f4ae24",
                       "isHook": false,
                       "skipped": false
                     },
@@ -768,31 +768,31 @@
                       "context": null,
                       "code": "//setup the base FST structure\nconst tempResultFST = new FSTTerminal('Literal', 'Literal_null');\ntempResultFST.setMergeStrategy('override');\ntempResultFST.setCodeLanguage('json');\ntempResultFST.setContent(\"null\");\ntempResultFST.setParent();\ntempResultFST.originNode = \"{\\\"type\\\":\\\"Literal\\\",\\\"value\\\":\\\"null\\\",\\\"raw\\\":\\\"null\\\"}\";\nrootAST.value = \"null\";\nrootAST.raw = \"null\";\nconst transformedFST = literalStrategy.toFST(rootAST);\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "51e8a65b-e207-473c-9e5f-77054f1c2e8d",
-                      "parentUUID": "2d2b5e9a-c599-49bd-b879-5a73b5f3db00",
+                      "uuid": "66e42af6-15e4-4a9b-bace-52c79df085c8",
+                      "parentUUID": "79972dad-7884-4c5e-92c1-73e924f4ae24",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
                   "passes": [
-                    "98568ad0-4b0e-4678-9b7e-41ef2b2289d7",
-                    "acbe1855-5f89-45d6-89c4-0cccb5bc6e24",
-                    "7f77262f-3506-4a1a-bffc-2cc06d02c2b4",
-                    "d3c55399-6246-4282-9ade-c3f899ee76af",
-                    "c24906e1-3b0a-4c2e-82f0-2a2dc4cbbbae",
-                    "51e8a65b-e207-473c-9e5f-77054f1c2e8d"
+                    "b12368e2-7240-4b16-8f36-befc984264bf",
+                    "84e0833d-1f36-4245-b070-3f2ce40e10b3",
+                    "38159280-91c8-41de-bf04-f766f6045313",
+                    "40d78a47-514c-44d2-a9a8-7507a8c1eba6",
+                    "0143473b-43a7-490a-a90b-aaa56e0e053b",
+                    "66e42af6-15e4-4a9b-bace-52c79df085c8"
                   ],
                   "failures": [],
                   "pending": [],
                   "skipped": [],
-                  "duration": 2,
+                  "duration": 0,
                   "root": false,
                   "rootEmpty": false,
                   "_timeout": 2000
                 },
                 {
-                  "uuid": "2497efab-44c8-4673-96fc-227d5a2f42d0",
+                  "uuid": "e8b90c81-8f34-4e63-920b-062c8dda00c6",
                   "title": "Test the FST to AST conversion",
                   "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
                   "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -810,8 +810,8 @@
                       "context": null,
                       "code": "//setup the base AST structure\nrootFST = new FSTTerminal('Literal', 'root');\nrootFST.setMergeStrategy('override');\nrootFST.setCodeLanguage('json');\nrootFST.setContent(\"\");\nrootFST.setParent();\nrootFST.originNode = \"{\\\"type\\\":\\\"Literal\\\",\\\"value\\\":\\\"\\\",\\\"raw\\\":\\\"\\\"}\";",
                       "err": {},
-                      "uuid": "a4986174-2d45-4a74-8c79-261fac24f56d",
-                      "parentUUID": "2497efab-44c8-4673-96fc-227d5a2f42d0",
+                      "uuid": "859c588f-7c9a-4bd1-9e0e-5ae84c096e43",
+                      "parentUUID": "e8b90c81-8f34-4e63-920b-062c8dda00c6",
                       "isHook": true,
                       "skipped": false
                     }
@@ -831,8 +831,8 @@
                       "context": null,
                       "code": "const tempResultAST = {\n    \"type\": \"Literal\",\n    \"value\": \"\",\n    \"raw\": \"\"\n};\nconst transformedAST = literalStrategy.toAST(rootFST);\nexpect(transformedAST).to.be.eql(tempResultAST);",
                       "err": {},
-                      "uuid": "864ef1ab-0f31-49bd-b899-8d237a369f3e",
-                      "parentUUID": "2497efab-44c8-4673-96fc-227d5a2f42d0",
+                      "uuid": "59cf32c3-99f1-4d3b-8ec4-e1e263dea5b1",
+                      "parentUUID": "e8b90c81-8f34-4e63-920b-062c8dda00c6",
                       "isHook": false,
                       "skipped": false
                     },
@@ -849,8 +849,8 @@
                       "context": null,
                       "code": "const tempResultAST = {\n    \"type\": \"Literal\",\n    \"value\": \"a\",\n    \"raw\": \"\\\"a\\\"\"\n};\nrootFST.setContent(\"a\");\nconst transformedAST = literalStrategy.toAST(rootFST);\nexpect(transformedAST).to.be.eql(tempResultAST);",
                       "err": {},
-                      "uuid": "e5c91481-3054-4e64-a1da-6d521fad148c",
-                      "parentUUID": "2497efab-44c8-4673-96fc-227d5a2f42d0",
+                      "uuid": "43443dc6-de85-4572-97d1-f2976cda8955",
+                      "parentUUID": "e8b90c81-8f34-4e63-920b-062c8dda00c6",
                       "isHook": false,
                       "skipped": false
                     },
@@ -867,8 +867,8 @@
                       "context": null,
                       "code": "const tempResultAST = {\n    \"type\": \"Literal\",\n    \"value\": 2,\n    \"raw\": \"2\"\n};\nrootFST.setContent(2);\nconst transformedAST = literalStrategy.toAST(rootFST);\nexpect(transformedAST).to.be.eql(tempResultAST);",
                       "err": {},
-                      "uuid": "ee5e7c52-a35f-4985-8ff4-ed2e7405cd2d",
-                      "parentUUID": "2497efab-44c8-4673-96fc-227d5a2f42d0",
+                      "uuid": "44a09558-c153-4a86-87ae-cce739598358",
+                      "parentUUID": "e8b90c81-8f34-4e63-920b-062c8dda00c6",
                       "isHook": false,
                       "skipped": false
                     },
@@ -885,8 +885,8 @@
                       "context": null,
                       "code": "const tempResultAST = {\n    \"type\": \"Literal\",\n    \"value\": \"true\",\n    \"raw\": \"true\"\n};\nrootFST.setContent(\"true\");\nconst transformedAST = literalStrategy.toAST(rootFST);\nexpect(transformedAST).to.be.eql(tempResultAST);",
                       "err": {},
-                      "uuid": "f5d318ca-1c32-4c32-a636-53f4a88d735a",
-                      "parentUUID": "2497efab-44c8-4673-96fc-227d5a2f42d0",
+                      "uuid": "79c23f0a-58fb-406d-8011-1b1dca666ed2",
+                      "parentUUID": "e8b90c81-8f34-4e63-920b-062c8dda00c6",
                       "isHook": false,
                       "skipped": false
                     },
@@ -894,7 +894,7 @@
                       "title": "Check correct AST transformation for a boolean Literal (false)",
                       "fullTitle": "Transformation Strategies Check the conversion strategy for Literal Test the FST to AST conversion Check correct AST transformation for a boolean Literal (false)",
                       "timedOut": false,
-                      "duration": 1,
+                      "duration": 0,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -903,8 +903,8 @@
                       "context": null,
                       "code": "const tempResultAST = {\n    \"type\": \"Literal\",\n    \"value\": \"false\",\n    \"raw\": \"false\"\n};\nrootFST.setContent(\"false\");\nconst transformedAST = literalStrategy.toAST(rootFST);\nexpect(transformedAST).to.be.eql(tempResultAST);",
                       "err": {},
-                      "uuid": "dd7c0fd3-e5ca-45da-8f9f-5f144c0f1a9e",
-                      "parentUUID": "2497efab-44c8-4673-96fc-227d5a2f42d0",
+                      "uuid": "ad8d028a-e693-44a4-8299-51874916d0d1",
+                      "parentUUID": "e8b90c81-8f34-4e63-920b-062c8dda00c6",
                       "isHook": false,
                       "skipped": false
                     },
@@ -921,25 +921,25 @@
                       "context": null,
                       "code": "const tempResultAST = {\n    \"type\": \"Literal\",\n    \"value\": \"null\",\n    \"raw\": \"null\"\n};\nrootFST.setContent(\"null\");\nconst transformedAST = literalStrategy.toAST(rootFST);\nexpect(transformedAST).to.be.eql(tempResultAST);",
                       "err": {},
-                      "uuid": "ae825eb5-b181-4179-98c7-7bd559ba9be9",
-                      "parentUUID": "2497efab-44c8-4673-96fc-227d5a2f42d0",
+                      "uuid": "d2ed0921-de19-4d83-819b-0dcb5e9d9783",
+                      "parentUUID": "e8b90c81-8f34-4e63-920b-062c8dda00c6",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
                   "passes": [
-                    "864ef1ab-0f31-49bd-b899-8d237a369f3e",
-                    "e5c91481-3054-4e64-a1da-6d521fad148c",
-                    "ee5e7c52-a35f-4985-8ff4-ed2e7405cd2d",
-                    "f5d318ca-1c32-4c32-a636-53f4a88d735a",
-                    "dd7c0fd3-e5ca-45da-8f9f-5f144c0f1a9e",
-                    "ae825eb5-b181-4179-98c7-7bd559ba9be9"
+                    "59cf32c3-99f1-4d3b-8ec4-e1e263dea5b1",
+                    "43443dc6-de85-4572-97d1-f2976cda8955",
+                    "44a09558-c153-4a86-87ae-cce739598358",
+                    "79c23f0a-58fb-406d-8011-1b1dca666ed2",
+                    "ad8d028a-e693-44a4-8299-51874916d0d1",
+                    "d2ed0921-de19-4d83-819b-0dcb5e9d9783"
                   ],
                   "failures": [],
                   "pending": [],
                   "skipped": [],
-                  "duration": 1,
+                  "duration": 0,
                   "root": false,
                   "rootEmpty": false,
                   "_timeout": 2000
@@ -955,7 +955,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "2ed7ceed-1d79-4aba-afd3-37a8cf6b3ded",
+              "uuid": "4522feea-b3c8-40d1-b8e7-bfa4c39114c1",
               "title": "Check the conversion strategy for ObjectExpression",
               "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
               "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -964,7 +964,7 @@
               "tests": [],
               "suites": [
                 {
-                  "uuid": "d23bb8cb-7227-4d88-bee9-b6f319900fff",
+                  "uuid": "fc18c820-497c-424d-ae9a-b77612795a6c",
                   "title": "Test the AST to FST conversion",
                   "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
                   "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -982,8 +982,8 @@
                       "context": null,
                       "code": "rootAST = {\n    type: \"ObjectExpression\",\n    properties: []\n};\ntempResultFST = new FSTNonTerminal(\"ObjectExpression\", \"root\");\ntempResultFST.setParent();\ntempResultFST.originNode = \"{\\\"type\\\":\\\"ObjectExpression\\\"}\";",
                       "err": {},
-                      "uuid": "fcc9d30e-9f50-429b-bda8-30791de16cf1",
-                      "parentUUID": "d23bb8cb-7227-4d88-bee9-b6f319900fff",
+                      "uuid": "4ef2df73-eedf-45b3-b697-d9c454f83e4f",
+                      "parentUUID": "fc18c820-497c-424d-ae9a-b77612795a6c",
                       "isHook": true,
                       "skipped": false
                     }
@@ -1003,8 +1003,8 @@
                       "context": null,
                       "code": "const transformedFST = strat.toFST(rootAST);\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "d6ab2c55-00b2-4d92-9ecd-b78e48e86c66",
-                      "parentUUID": "d23bb8cb-7227-4d88-bee9-b6f319900fff",
+                      "uuid": "4df5e623-0539-4197-998a-961c8d4bb9d4",
+                      "parentUUID": "fc18c820-497c-424d-ae9a-b77612795a6c",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1012,7 +1012,7 @@
                       "title": "Check correct FST transformation for a string ObjectExpression \"{\"hello\": \"World\"}\"",
                       "fullTitle": "Transformation Strategies Check the conversion strategy for ObjectExpression Test the AST to FST conversion Check correct FST transformation for a string ObjectExpression \"{\"hello\": \"World\"}\"",
                       "timedOut": false,
-                      "duration": 1,
+                      "duration": 0,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -1021,8 +1021,8 @@
                       "context": null,
                       "code": "rootAST.properties.push({\n    type: \"Property\",\n    key: {\n        type: \"Identifier\",\n        name: \"hello\"\n    },\n    value: {\n        type: \"Literal\",\n        value: \"World\",\n        raw: \"\\\"World\\\"\"\n    },\n    kind: \"init\"\n});\nconst textChild = new FSTTerminal('Property', 'hello');\ntextChild.setMergeStrategy('propertyCompose');\ntextChild.setCodeLanguage('json');\ntextChild.setContent(\"\\\"World\\\"\");\ntextChild.setParent(tempResultFST);\ntextChild.originNode = \"{\\\"type\\\":\\\"Property\\\",\\\"key\\\":{\\\"type\\\":\\\"Identifier\\\",\\\"name\\\":\\\"hello\\\"},\\\"kind\\\":\\\"init\\\"}\";\ntempResultFST.addChild(textChild);\nconst transformedFST = strat.toFST(rootAST);\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "b5d3fcb3-5c7d-4d44-809b-fd4663834450",
-                      "parentUUID": "d23bb8cb-7227-4d88-bee9-b6f319900fff",
+                      "uuid": "492fdad6-767d-439d-aad6-d458025d03ad",
+                      "parentUUID": "fc18c820-497c-424d-ae9a-b77612795a6c",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1039,8 +1039,8 @@
                       "context": null,
                       "code": "rootAST.properties.push({\n    type: \"Property\",\n    key: {\n        type: \"Identifier\",\n        name: \"say\"\n    },\n    value: {\n        type: \"Literal\",\n        value: 2,\n        raw: \"2\"\n    },\n    kind: \"init\"\n});\nconst textChild = new FSTTerminal('Property', 'say');\ntextChild.setMergeStrategy('propertyCompose');\ntextChild.setCodeLanguage('json');\ntextChild.setContent(\"2\");\ntextChild.setParent(tempResultFST);\ntextChild.originNode = \"{\\\"type\\\":\\\"Property\\\",\\\"key\\\":{\\\"type\\\":\\\"Identifier\\\",\\\"name\\\":\\\"say\\\"},\\\"kind\\\":\\\"init\\\"}\";\ntempResultFST.addChild(textChild);\nconst transformedFST = strat.toFST(rootAST);\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "663d1a07-4e09-4da0-969a-922b8035795f",
-                      "parentUUID": "d23bb8cb-7227-4d88-bee9-b6f319900fff",
+                      "uuid": "2061fa60-f5fa-4197-bb88-f707d236fe24",
+                      "parentUUID": "fc18c820-497c-424d-ae9a-b77612795a6c",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1057,8 +1057,8 @@
                       "context": null,
                       "code": "rootAST.properties.push({\n    type: \"Property\",\n    key: {\n        type: \"Identifier\",\n        name: \"toBe\"\n    },\n    value: {\n        type: \"Literal\",\n        value: true,\n        raw: \"true\"\n    },\n    kind: \"init\"\n});\nconst textChild = new FSTTerminal('Property', 'toBe');\ntextChild.setMergeStrategy('propertyCompose');\ntextChild.setCodeLanguage('json');\ntextChild.setContent(\"true\");\ntextChild.setParent(tempResultFST);\ntextChild.originNode = \"{\\\"type\\\":\\\"Property\\\",\\\"key\\\":{\\\"type\\\":\\\"Identifier\\\",\\\"name\\\":\\\"toBe\\\"},\\\"kind\\\":\\\"init\\\"}\";\ntempResultFST.addChild(textChild);\nconst transformedFST = strat.toFST(rootAST);\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "629d014c-9204-460b-9f57-b9cbf1bd39fc",
-                      "parentUUID": "d23bb8cb-7227-4d88-bee9-b6f319900fff",
+                      "uuid": "9970e9c9-fe45-4038-910c-5c79b6316699",
+                      "parentUUID": "fc18c820-497c-424d-ae9a-b77612795a6c",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1075,30 +1075,30 @@
                       "context": null,
                       "code": "rootAST.properties.push({\n    type: \"Property\",\n    key: {\n        type: \"Identifier\",\n        name: \"its\"\n    },\n    value: {\n        type: \"Literal\",\n        value: null,\n        raw: \"null\"\n    },\n    kind: \"init\"\n});\nconst textChild = new FSTTerminal('Property', 'its');\ntextChild.setMergeStrategy('propertyCompose');\ntextChild.setCodeLanguage('json');\ntextChild.setContent(\"null\");\ntextChild.setParent(tempResultFST);\ntextChild.originNode = \"{\\\"type\\\":\\\"Property\\\",\\\"key\\\":{\\\"type\\\":\\\"Identifier\\\",\\\"name\\\":\\\"its\\\"},\\\"kind\\\":\\\"init\\\"}\";\ntempResultFST.addChild(textChild);\nconst transformedFST = strat.toFST(rootAST);\nexpect(transformedFST).to.be.eql(tempResultFST);",
                       "err": {},
-                      "uuid": "de2f7a75-f996-4639-9b64-3d674f22af93",
-                      "parentUUID": "d23bb8cb-7227-4d88-bee9-b6f319900fff",
+                      "uuid": "670ebef2-1282-4bc9-8cd7-87122d043c53",
+                      "parentUUID": "fc18c820-497c-424d-ae9a-b77612795a6c",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
                   "passes": [
-                    "d6ab2c55-00b2-4d92-9ecd-b78e48e86c66",
-                    "b5d3fcb3-5c7d-4d44-809b-fd4663834450",
-                    "663d1a07-4e09-4da0-969a-922b8035795f",
-                    "629d014c-9204-460b-9f57-b9cbf1bd39fc",
-                    "de2f7a75-f996-4639-9b64-3d674f22af93"
+                    "4df5e623-0539-4197-998a-961c8d4bb9d4",
+                    "492fdad6-767d-439d-aad6-d458025d03ad",
+                    "2061fa60-f5fa-4197-bb88-f707d236fe24",
+                    "9970e9c9-fe45-4038-910c-5c79b6316699",
+                    "670ebef2-1282-4bc9-8cd7-87122d043c53"
                   ],
                   "failures": [],
                   "pending": [],
                   "skipped": [],
-                  "duration": 1,
+                  "duration": 0,
                   "root": false,
                   "rootEmpty": false,
                   "_timeout": 2000
                 },
                 {
-                  "uuid": "f0ad2a1d-a3d9-48bf-8813-a03e53b62a01",
+                  "uuid": "31d0e7dd-61db-427d-b282-33afc4d697d5",
                   "title": "Test the FST to AST conversion",
                   "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
                   "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -1116,8 +1116,8 @@
                       "context": null,
                       "code": "tempResult = {\n    type: \"ObjectExpression\",\n    properties: []\n};\nrootFST = new FSTNonTerminal(\"ObjectExpression\", \"root\");\nrootFST.setParent();\nrootFST.originNode = \"{\\\"type\\\":\\\"ObjectExpression\\\"}\";",
                       "err": {},
-                      "uuid": "eeae5490-127e-4b26-9f03-b285ecc024ff",
-                      "parentUUID": "f0ad2a1d-a3d9-48bf-8813-a03e53b62a01",
+                      "uuid": "cd6a5c5b-3734-4044-af2a-14d9927f455b",
+                      "parentUUID": "31d0e7dd-61db-427d-b282-33afc4d697d5",
                       "isHook": true,
                       "skipped": false
                     }
@@ -1137,32 +1137,14 @@
                       "context": null,
                       "code": "const transformedFST = strat.toAST(rootFST);\nexpect(transformedFST).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "465f5ec1-edb7-4893-817a-354668799fce",
-                      "parentUUID": "f0ad2a1d-a3d9-48bf-8813-a03e53b62a01",
+                      "uuid": "76858f86-fb90-469b-a6c0-12b20f7369dc",
+                      "parentUUID": "31d0e7dd-61db-427d-b282-33afc4d697d5",
                       "isHook": false,
                       "skipped": false
                     },
                     {
                       "title": "Check correct AST transformation for a string ObjectExpression \"{\"hello\": \"World\"}\"",
                       "fullTitle": "Transformation Strategies Check the conversion strategy for ObjectExpression Test the FST to AST conversion Check correct AST transformation for a string ObjectExpression \"{\"hello\": \"World\"}\"",
-                      "timedOut": false,
-                      "duration": 1,
-                      "state": "passed",
-                      "speed": "fast",
-                      "pass": true,
-                      "fail": false,
-                      "pending": false,
-                      "context": null,
-                      "code": "const textChild = new FSTTerminal('Property', 'hello');\ntextChild.setMergeStrategy('propertyCompose');\ntextChild.setCodeLanguage('json');\ntextChild.setContent(\"\\\"World\\\"\");\ntextChild.setParent(rootFST);\ntextChild.originNode = \"{\\\"type\\\":\\\"Property\\\",\\\"key\\\":{\\\"type\\\":\\\"Identifier\\\",\\\"name\\\":\\\"hello\\\"},\\\"kind\\\":\\\"init\\\"}\";\nrootFST.addChild(textChild);\ntempResult.properties.push({\n    type: \"Property\",\n    key: {\n        type: \"Identifier\",\n        name: \"hello\"\n    },\n    value: {\n        type: \"Literal\",\n        value: \"World\",\n        raw: \"\\\"World\\\"\"\n    }\n});\nconst transformedFST = strat.toAST(rootFST);\nexpect(transformedFST).to.be.eql(tempResult);",
-                      "err": {},
-                      "uuid": "e73682aa-920f-4475-ac3c-b63e5e932165",
-                      "parentUUID": "f0ad2a1d-a3d9-48bf-8813-a03e53b62a01",
-                      "isHook": false,
-                      "skipped": false
-                    },
-                    {
-                      "title": "Check correct AST transformation for a number ObjectExpression \"{\"say\": 2}\"",
-                      "fullTitle": "Transformation Strategies Check the conversion strategy for ObjectExpression Test the FST to AST conversion Check correct AST transformation for a number ObjectExpression \"{\"say\": 2}\"",
                       "timedOut": false,
                       "duration": 0,
                       "state": "passed",
@@ -1171,10 +1153,28 @@
                       "fail": false,
                       "pending": false,
                       "context": null,
+                      "code": "const textChild = new FSTTerminal('Property', 'hello');\ntextChild.setMergeStrategy('propertyCompose');\ntextChild.setCodeLanguage('json');\ntextChild.setContent(\"\\\"World\\\"\");\ntextChild.setParent(rootFST);\ntextChild.originNode = \"{\\\"type\\\":\\\"Property\\\",\\\"key\\\":{\\\"type\\\":\\\"Identifier\\\",\\\"name\\\":\\\"hello\\\"},\\\"kind\\\":\\\"init\\\"}\";\nrootFST.addChild(textChild);\ntempResult.properties.push({\n    type: \"Property\",\n    key: {\n        type: \"Identifier\",\n        name: \"hello\"\n    },\n    value: {\n        type: \"Literal\",\n        value: \"World\",\n        raw: \"\\\"World\\\"\"\n    }\n});\nconst transformedFST = strat.toAST(rootFST);\nexpect(transformedFST).to.be.eql(tempResult);",
+                      "err": {},
+                      "uuid": "e71e6260-60f6-457e-ab9c-6d442a116c1f",
+                      "parentUUID": "31d0e7dd-61db-427d-b282-33afc4d697d5",
+                      "isHook": false,
+                      "skipped": false
+                    },
+                    {
+                      "title": "Check correct AST transformation for a number ObjectExpression \"{\"say\": 2}\"",
+                      "fullTitle": "Transformation Strategies Check the conversion strategy for ObjectExpression Test the FST to AST conversion Check correct AST transformation for a number ObjectExpression \"{\"say\": 2}\"",
+                      "timedOut": false,
+                      "duration": 1,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
                       "code": "const textChild = new FSTTerminal('Property', 'say');\ntextChild.setMergeStrategy('propertyCompose');\ntextChild.setCodeLanguage('json');\ntextChild.setContent(\"2\");\ntextChild.setParent(rootFST);\ntextChild.originNode = \"{\\\"type\\\":\\\"Property\\\",\\\"key\\\":{\\\"type\\\":\\\"Identifier\\\",\\\"name\\\":\\\"say\\\"},\\\"kind\\\":\\\"init\\\"}\";\nrootFST.addChild(textChild);\ntempResult.properties.push({\n    type: \"Property\",\n    key: {\n        type: \"Identifier\",\n        name: \"say\"\n    },\n    value: {\n        type: \"Literal\",\n        value: 2,\n        raw: \"2\"\n    }\n});\nconst transformedFST = strat.toAST(rootFST);\nexpect(transformedFST).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "c636d90b-0dcf-46ed-832a-07f17b454359",
-                      "parentUUID": "f0ad2a1d-a3d9-48bf-8813-a03e53b62a01",
+                      "uuid": "e151505f-b38b-40c2-ac46-863e0e1dbd52",
+                      "parentUUID": "31d0e7dd-61db-427d-b282-33afc4d697d5",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1191,8 +1191,8 @@
                       "context": null,
                       "code": "const textChild = new FSTTerminal('Property', 'toBe');\ntextChild.setMergeStrategy('propertyCompose');\ntextChild.setCodeLanguage('json');\ntextChild.setContent(\"true\");\ntextChild.setParent(rootFST);\ntextChild.originNode = \"{\\\"type\\\":\\\"Property\\\",\\\"key\\\":{\\\"type\\\":\\\"Identifier\\\",\\\"name\\\":\\\"toBe\\\"},\\\"kind\\\":\\\"init\\\"}\";\nrootFST.addChild(textChild);\ntempResult.properties.push({\n    type: \"Property\",\n    key: {\n        type: \"Identifier\",\n        name: \"toBe\"\n    },\n    value: {\n        type: \"Literal\",\n        value: true,\n        raw: \"true\"\n    }\n});\nconst transformedFST = strat.toAST(rootFST);\nexpect(transformedFST).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "ee524a80-65d6-4c67-a26e-fe125c66ec9e",
-                      "parentUUID": "f0ad2a1d-a3d9-48bf-8813-a03e53b62a01",
+                      "uuid": "f5103ab0-7b30-4b45-91ce-ba0d79978ddf",
+                      "parentUUID": "31d0e7dd-61db-427d-b282-33afc4d697d5",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1209,19 +1209,19 @@
                       "context": null,
                       "code": "const textChild = new FSTTerminal('Property', 'its');\ntextChild.setMergeStrategy('propertyCompose');\ntextChild.setCodeLanguage('json');\ntextChild.setContent(\"null\");\ntextChild.setParent(rootFST);\ntextChild.originNode = \"{\\\"type\\\":\\\"Property\\\",\\\"key\\\":{\\\"type\\\":\\\"Identifier\\\",\\\"name\\\":\\\"its\\\"},\\\"kind\\\":\\\"init\\\"}\";\nrootFST.addChild(textChild);\ntempResult.properties.push({\n    type: \"Property\",\n    key: {\n        type: \"Identifier\",\n        name: \"its\"\n    },\n    value: {\n        type: \"Literal\",\n        value: null,\n        raw: \"null\"\n    }\n});\nconst transformedFST = strat.toAST(rootFST);\nexpect(transformedFST).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "d73607ec-09cb-4e6b-9200-5f871c9106d8",
-                      "parentUUID": "f0ad2a1d-a3d9-48bf-8813-a03e53b62a01",
+                      "uuid": "444e4015-59fe-4064-a01f-51c2b63f030c",
+                      "parentUUID": "31d0e7dd-61db-427d-b282-33afc4d697d5",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
                   "passes": [
-                    "465f5ec1-edb7-4893-817a-354668799fce",
-                    "e73682aa-920f-4475-ac3c-b63e5e932165",
-                    "c636d90b-0dcf-46ed-832a-07f17b454359",
-                    "ee524a80-65d6-4c67-a26e-fe125c66ec9e",
-                    "d73607ec-09cb-4e6b-9200-5f871c9106d8"
+                    "76858f86-fb90-469b-a6c0-12b20f7369dc",
+                    "e71e6260-60f6-457e-ab9c-6d442a116c1f",
+                    "e151505f-b38b-40c2-ac46-863e0e1dbd52",
+                    "f5103ab0-7b30-4b45-91ce-ba0d79978ddf",
+                    "444e4015-59fe-4064-a01f-51c2b63f030c"
                   ],
                   "failures": [],
                   "pending": [],
@@ -1242,7 +1242,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "966f2ee8-bfe8-4e59-b94d-00345398984d",
+              "uuid": "fc8d4879-774d-4ebd-a7bc-3a3bafbd7464",
               "title": "Check the conversion strategy for Property",
               "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
               "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -1251,7 +1251,7 @@
               "tests": [],
               "suites": [
                 {
-                  "uuid": "bdee3fed-360f-4f05-909b-6f3de6c12be4",
+                  "uuid": "a07434cb-4d5a-4191-a596-2efb9de634e5",
                   "title": "Test the AST to FST conversion",
                   "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
                   "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -1269,8 +1269,8 @@
                       "context": null,
                       "code": "//setup the base AST structure\nrootAST = {\n    type: \"Property\",\n    key: {\n        type: \"Identifier\",\n        name: \"test\"\n    },\n    value: undefined\n};\ntempResult = new FSTTerminal(\"Property\", \"test\");\ntempResult.setMergeStrategy('propertyCompose');\ntempResult.setCodeLanguage('json');\ntempResult.setParent();\ntempResult.originNode = \"{\\\"type\\\":\\\"Property\\\",\\\"key\\\":{\\\"type\\\":\\\"Identifier\\\",\\\"name\\\":\\\"test\\\"}}\";",
                       "err": {},
-                      "uuid": "07892062-f03d-43f9-9682-105c0503ccb9",
-                      "parentUUID": "bdee3fed-360f-4f05-909b-6f3de6c12be4",
+                      "uuid": "7340a959-5406-42b9-a324-b44f93d105bb",
+                      "parentUUID": "a07434cb-4d5a-4191-a596-2efb9de634e5",
                       "isHook": true,
                       "skipped": false
                     }
@@ -1290,8 +1290,8 @@
                       "context": null,
                       "code": "const result = strat.toFST(rootAST);\nexpect(result).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "b09b0c3e-cb11-4a01-b460-15f81cad213c",
-                      "parentUUID": "bdee3fed-360f-4f05-909b-6f3de6c12be4",
+                      "uuid": "857f2f49-6dac-4407-8a4f-59d0a3016d23",
+                      "parentUUID": "a07434cb-4d5a-4191-a596-2efb9de634e5",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1299,7 +1299,7 @@
                       "title": "Check correct FST transformation for a string Property \"Hello World\"",
                       "fullTitle": "Transformation Strategies Check the conversion strategy for Property Test the AST to FST conversion Check correct FST transformation for a string Property \"Hello World\"",
                       "timedOut": false,
-                      "duration": 0,
+                      "duration": 1,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -1308,8 +1308,8 @@
                       "context": null,
                       "code": "rootAST.value = {\n    type: \"Literal\",\n    value: \"Hello World\",\n    raw: \"\\\"Hello World\\\"\"\n};\ntempResult.setContent(\"\\\"Hello World\\\"\");\nconst result = strat.toFST(rootAST);\nexpect(result).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "8084a591-1643-43d5-b656-1f02b27b2a20",
-                      "parentUUID": "bdee3fed-360f-4f05-909b-6f3de6c12be4",
+                      "uuid": "b32e38ef-ba8e-4bf8-9257-4a9ad77171ac",
+                      "parentUUID": "a07434cb-4d5a-4191-a596-2efb9de634e5",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1326,8 +1326,8 @@
                       "context": null,
                       "code": "rootAST.value = {\n    type: \"Literal\",\n    value: 1,\n    raw: \"1\"\n};\ntempResult.setContent(\"1\");\nconst result = strat.toFST(rootAST);\nexpect(result).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "2499734b-bf65-4b5b-8e69-c48b7d961970",
-                      "parentUUID": "bdee3fed-360f-4f05-909b-6f3de6c12be4",
+                      "uuid": "86eb15fc-af8c-480f-b2f8-c98053426800",
+                      "parentUUID": "a07434cb-4d5a-4191-a596-2efb9de634e5",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1344,8 +1344,8 @@
                       "context": null,
                       "code": "rootAST.value = {\n    type: \"Literal\",\n    value: true,\n    raw: \"true\"\n};\ntempResult.setContent(\"true\");\nconst result = strat.toFST(rootAST);\nexpect(result).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "00742d81-e233-46af-9c43-bc7cba2a3a75",
-                      "parentUUID": "bdee3fed-360f-4f05-909b-6f3de6c12be4",
+                      "uuid": "f5ff9a2f-8a6f-4b23-8759-9f187a40f037",
+                      "parentUUID": "a07434cb-4d5a-4191-a596-2efb9de634e5",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1362,30 +1362,30 @@
                       "context": null,
                       "code": "rootAST.value = {\n    type: \"Literal\",\n    value: null,\n    raw: \"null\"\n};\ntempResult.setContent(\"null\");\nconst result = strat.toFST(rootAST);\nexpect(result).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "9fcf6335-dac3-4c7b-a639-04b8e59c743a",
-                      "parentUUID": "bdee3fed-360f-4f05-909b-6f3de6c12be4",
+                      "uuid": "cb81e744-9c19-4318-852d-ee14e269c883",
+                      "parentUUID": "a07434cb-4d5a-4191-a596-2efb9de634e5",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
                   "passes": [
-                    "b09b0c3e-cb11-4a01-b460-15f81cad213c",
-                    "8084a591-1643-43d5-b656-1f02b27b2a20",
-                    "2499734b-bf65-4b5b-8e69-c48b7d961970",
-                    "00742d81-e233-46af-9c43-bc7cba2a3a75",
-                    "9fcf6335-dac3-4c7b-a639-04b8e59c743a"
+                    "857f2f49-6dac-4407-8a4f-59d0a3016d23",
+                    "b32e38ef-ba8e-4bf8-9257-4a9ad77171ac",
+                    "86eb15fc-af8c-480f-b2f8-c98053426800",
+                    "f5ff9a2f-8a6f-4b23-8759-9f187a40f037",
+                    "cb81e744-9c19-4318-852d-ee14e269c883"
                   ],
                   "failures": [],
                   "pending": [],
                   "skipped": [],
-                  "duration": 0,
+                  "duration": 1,
                   "root": false,
                   "rootEmpty": false,
                   "_timeout": 2000
                 },
                 {
-                  "uuid": "b3e5afb3-d90f-42a8-a4e1-755cd9e738df",
+                  "uuid": "bbf33493-11dc-403d-92d5-0d044ded27dc",
                   "title": "Test the FST to AST conversion",
                   "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\astTools\\strategies\\StrategyTests.spec.js",
                   "file": "\\lib\\astTools\\strategies\\StrategyTests.spec.js",
@@ -1403,8 +1403,8 @@
                       "context": null,
                       "code": "rootFST = new FSTTerminal(\"Property\", \"test\");\nrootFST.setMergeStrategy('propertyCompose');\nrootFST.setCodeLanguage('json');\nrootFST.setParent();\nrootFST.originNode = \"{\\\"type\\\":\\\"Property\\\",\\\"key\\\":{\\\"type\\\":\\\"Literal\\\",\\\"value\\\":\\\"test\\\",\\\"raw\\\":\\\"test\\\"}}\";\ntempResult = {\n    type: \"Property\",\n    key: {\n        type: \"Identifier\",\n        name: \"test\"\n    },\n    value: undefined\n};",
                       "err": {},
-                      "uuid": "fa5ab0b1-c321-4fab-b02c-de5064d912cb",
-                      "parentUUID": "b3e5afb3-d90f-42a8-a4e1-755cd9e738df",
+                      "uuid": "0a3c1b4d-7906-4db2-9b92-76980bc434b7",
+                      "parentUUID": "bbf33493-11dc-403d-92d5-0d044ded27dc",
                       "isHook": true,
                       "skipped": false
                     }
@@ -1415,7 +1415,7 @@
                       "title": "Check correct AST transformation for empty Property \"\"",
                       "fullTitle": "Transformation Strategies Check the conversion strategy for Property Test the FST to AST conversion Check correct AST transformation for empty Property \"\"",
                       "timedOut": false,
-                      "duration": 1,
+                      "duration": 0,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -1424,8 +1424,8 @@
                       "context": null,
                       "code": "const result = strat.toAST(rootFST);\nexpect(result).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "9c065a98-7bbe-44da-ac33-ff94566e4bfb",
-                      "parentUUID": "b3e5afb3-d90f-42a8-a4e1-755cd9e738df",
+                      "uuid": "6eb82e24-cd17-43f5-bb45-5b8ee21ad95c",
+                      "parentUUID": "bbf33493-11dc-403d-92d5-0d044ded27dc",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1442,8 +1442,8 @@
                       "context": null,
                       "code": "rootFST.setContent(\"\\\"Hello World\\\"\");\ntempResult.value = {\n    type: \"Literal\",\n    value: \"Hello World\",\n    raw: \"\\\"Hello World\\\"\"\n};\nconst result = strat.toAST(rootFST);\nexpect(result).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "dd47c42e-6c61-4fff-8920-d20476c7136f",
-                      "parentUUID": "b3e5afb3-d90f-42a8-a4e1-755cd9e738df",
+                      "uuid": "13fdd43d-9594-483a-8fe1-bfc1078dac78",
+                      "parentUUID": "bbf33493-11dc-403d-92d5-0d044ded27dc",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1451,7 +1451,7 @@
                       "title": "Check correct AST transformation for a number Property 1",
                       "fullTitle": "Transformation Strategies Check the conversion strategy for Property Test the FST to AST conversion Check correct AST transformation for a number Property 1",
                       "timedOut": false,
-                      "duration": 0,
+                      "duration": 1,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -1460,8 +1460,8 @@
                       "context": null,
                       "code": "rootFST.setContent(\"1\");\ntempResult.value = {\n    type: \"Literal\",\n    value: 1,\n    raw: \"1\"\n};\nconst result = strat.toAST(rootFST);\nexpect(result).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "63efef1b-7a01-4e69-b38e-905d3f93bf7b",
-                      "parentUUID": "b3e5afb3-d90f-42a8-a4e1-755cd9e738df",
+                      "uuid": "cbe6b293-d1be-49d5-97a0-1baa195bf77d",
+                      "parentUUID": "bbf33493-11dc-403d-92d5-0d044ded27dc",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1478,8 +1478,8 @@
                       "context": null,
                       "code": "rootFST.setContent(\"true\");\ntempResult.value = {\n    type: \"Literal\",\n    value: true,\n    raw: \"true\"\n};\nconst result = strat.toAST(rootFST);\nexpect(result).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "7bd0d6bd-fb06-45a7-a33e-f84bc7c546b9",
-                      "parentUUID": "b3e5afb3-d90f-42a8-a4e1-755cd9e738df",
+                      "uuid": "1105c115-5d16-4026-80b4-3ccdf2e596ba",
+                      "parentUUID": "bbf33493-11dc-403d-92d5-0d044ded27dc",
                       "isHook": false,
                       "skipped": false
                     },
@@ -1496,19 +1496,19 @@
                       "context": null,
                       "code": "rootFST.setContent(\"null\");\ntempResult.value = {\n    type: \"Literal\",\n    value: null,\n    raw: \"null\"\n};\nconst result = strat.toAST(rootFST);\nexpect(result).to.be.eql(tempResult);",
                       "err": {},
-                      "uuid": "62c90f3b-ae42-48bd-8415-95846dd75f82",
-                      "parentUUID": "b3e5afb3-d90f-42a8-a4e1-755cd9e738df",
+                      "uuid": "e7f63c32-c0aa-4ce8-92e5-2f9adcf98906",
+                      "parentUUID": "bbf33493-11dc-403d-92d5-0d044ded27dc",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
                   "passes": [
-                    "9c065a98-7bbe-44da-ac33-ff94566e4bfb",
-                    "dd47c42e-6c61-4fff-8920-d20476c7136f",
-                    "63efef1b-7a01-4e69-b38e-905d3f93bf7b",
-                    "7bd0d6bd-fb06-45a7-a33e-f84bc7c546b9",
-                    "62c90f3b-ae42-48bd-8415-95846dd75f82"
+                    "6eb82e24-cd17-43f5-bb45-5b8ee21ad95c",
+                    "13fdd43d-9594-483a-8fe1-bfc1078dac78",
+                    "cbe6b293-d1be-49d5-97a0-1baa195bf77d",
+                    "1105c115-5d16-4026-80b4-3ccdf2e596ba",
+                    "e7f63c32-c0aa-4ce8-92e5-2f9adcf98906"
                   ],
                   "failures": [],
                   "pending": [],
@@ -1539,7 +1539,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "af5c1838-0926-4143-afce-b89e02f058d5",
+          "uuid": "3b2591c4-3e3f-4e11-8810-6a182898a098",
           "title": "Imposing Rules",
           "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\rules\\RulesTest.spec.js",
           "file": "\\lib\\rules\\RulesTest.spec.js",
@@ -1548,7 +1548,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "306fdbce-f153-4746-ad8b-790f36d947ed",
+              "uuid": "3daff2ff-75da-4df2-b78a-fd832c407e31",
               "title": "Check the list concatenation of arrays",
               "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\rules\\RulesTest.spec.js",
               "file": "\\lib\\rules\\RulesTest.spec.js",
@@ -1568,8 +1568,8 @@
                   "context": null,
                   "code": "",
                   "err": {},
-                  "uuid": "90dc0bb1-66f7-49a2-ae33-a82850c1e796",
-                  "parentUUID": "306fdbce-f153-4746-ad8b-790f36d947ed",
+                  "uuid": "7330de70-7eed-4edf-928f-7f4930423f07",
+                  "parentUUID": "3daff2ff-75da-4df2-b78a-fd832c407e31",
                   "isHook": false,
                   "skipped": false
                 }
@@ -1578,7 +1578,7 @@
               "passes": [],
               "failures": [],
               "pending": [
-                "90dc0bb1-66f7-49a2-ae33-a82850c1e796"
+                "7330de70-7eed-4edf-928f-7f4930423f07"
               ],
               "skipped": [],
               "duration": 0,
@@ -1587,7 +1587,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "d4a17d30-0996-435d-bcbd-f88144326f81",
+              "uuid": "31f0d99c-59d5-445c-8eee-7e8524b8aa2b",
               "title": "Check the composition of object expressions",
               "fullFile": "C:\\Users\\martena\\Entwicklung\\smithery\\smithery-plugin-json\\lib\\rules\\RulesTest.spec.js",
               "file": "\\lib\\rules\\RulesTest.spec.js",
@@ -1607,8 +1607,8 @@
                   "context": null,
                   "code": "",
                   "err": {},
-                  "uuid": "41d5bf9b-0c96-4d17-a452-a0574958e3c6",
-                  "parentUUID": "d4a17d30-0996-435d-bcbd-f88144326f81",
+                  "uuid": "2b1c00fa-cd47-475f-a850-5c7980e42a38",
+                  "parentUUID": "31f0d99c-59d5-445c-8eee-7e8524b8aa2b",
                   "isHook": false,
                   "skipped": false
                 }
@@ -1617,7 +1617,7 @@
               "passes": [],
               "failures": [],
               "pending": [
-                "41d5bf9b-0c96-4d17-a452-a0574958e3c6"
+                "2b1c00fa-cd47-475f-a850-5c7980e42a38"
               ],
               "skipped": [],
               "duration": 0,
