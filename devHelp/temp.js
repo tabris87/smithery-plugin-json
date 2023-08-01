@@ -1,6 +1,6 @@
-import { parse } from './lib/astTools/parser.js';
-import { generate } from './lib/astTools/generator.js';
-import { astToFst, fstToAst } from './lib/astTools/transformer.js';
+import { parse } from '../lib/astTools/parser.js';
+import { generate } from '../lib/astTools/generator.js';
+import { astToFst, fstToAst } from '../lib/astTools/transformer.js';
 
 const jsonStringLevel1 = '{"array": ["1", ["2"]]}';
 const jsonStringLevel2 = '["1", ["2"]]';

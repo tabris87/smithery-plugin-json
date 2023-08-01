@@ -2,3 +2,6 @@
 coverage
 test
 blub
+reports
+devHelp
+.mocharc.json
